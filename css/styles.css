@@ -1,0 +1,202 @@
+:root {
+    --primary-text-color: #212121;
+    --description-text-color: #757575;
+    --accent-color: #2196F3;
+    --active-color-button: #188CE8;
+    --primary-bg-color: #F5F4FA;
+    --accent-bg-color: #2F303A;
+    --white-color: #ffffff;
+    --white-color-alpha:rgba(255, 255, 255, 0.6);
+    --black-color: #000000;
+}
+
+body{
+    background-color: var(--white-color);
+    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+
+ /* Logo */
+.logo {
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+} 
+.logo .logo-accent {
+    color: var(--accent-color);
+}
+.logo .logo-black {
+    color: var(--black-color);
+}
+.logo .logo-white {
+    color: var(--white-color);
+}
+
+
+/* Reset style */
+.link {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+
+/* Section common styles */
+.section .section-title {
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+
+/* Contacts */
+
+.contacts .link {
+    color: var(--description-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.contacts-footer .link {
+    color: var(--white-color-alpha);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+}
+.contacts-footer .geolocation {
+     /* Параметры шрифта унаследовали выше */
+    color: var(--white-color);
+}
+.contacts .link:hover,
+.contacts .link:focus,
+.contacts-footer .link:hover,
+.contacts-footer .link:focus
+ {
+    color: var(--accent-color);
+}
+
+
+/* Navigation */
+.nav-list .link{
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.nav-list .link.current {
+    color: var(--accent-color);
+}
+.nav-list .link:hover,
+.nav-list .link:focus {
+    color: var(--accent-color);
+}
+
+
+/* Hero */
+.hero {
+    background-color: var(--accent-bg-color);
+    letter-spacing: 0.06em;
+}
+.hero .hero-title {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+}
+
+
+/* Button */
+/* Настройки для часто встрещающихся кнопок */
+.button {
+    background-color: var(--primary-bg-color);
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.hero .button {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+}
+.hero .button:hover,
+.hero .button:focus {
+    background-color: var(--active-color-button);
+}
+.filters-list .button:hover,
+.filters-list .button:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+
+
+
+
+/* Footer */
+footer {
+    background-color: var(--accent-bg-color);
+}
+
+
+/* Features */
+.features-list .title {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.14;
+}
+.features-list .description {
+    color: var(--description-text-color);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* Team */
+.team-list .title {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+.team-list .description {
+    color: var(--description-text-color);
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+
+
+/* Portfolio from portfolio.html*/
+.portfolio-list .link {
+    color: var(--primary-text-color);
+}
+.portfolio-list .title {
+    color: var(--primary-text-color);
+    letter-spacing: 0.06em;
+    font-size: 18px;
+    line-height: 2.0;
+}
+.portfolio-list .description {
+    color: var(--description-text-color);
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+
