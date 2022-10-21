@@ -19,43 +19,79 @@ body{
 
 
 
- /* Logo */
-.logo {
-    font-family: Raleway, sans-serif;
-    font-size: 26px;
-    line-height: 1.19;
-} 
-.logo .logo-accent {
-    color: var(--accent-color);
-}
-.logo .logo-black {
-    color: var(--black-color);
-}
-.logo .logo-white {
-    color: var(--white-color);
-}
-
-
-/* Reset style */
+/* RESET STYLES */
 .link {
     text-decoration: none;
 }
-ul {
+.list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 
-/* Section common styles */
+/* SECTION COMMON STYLES */
 .section .section-title {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
 }
 
+/* LOGO */
+.logo {
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+}
 
-/* Contacts */
+.logo .logo-accent {
+    color: var(--accent-color);
+}
+
+.logo .logo-black {
+    color: var(--black-color);
+}
+
+.logo .logo-white {
+    color: var(--white-color);
+}
+
+/* CONTAINER */
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* HEADER */
+
+.header-elements {
+    display: flex;
+}
+.nav-elements, 
+.contacts {
+    align-items: center;
+}
+
+/* CONTACTS */
+
+.contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts .item + .item {
+    margin-left: 50px;
+}
 
 .contacts .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--description-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -75,19 +111,31 @@ ul {
 .contacts .link:hover,
 .contacts .link:focus,
 .contacts-footer .link:hover,
-.contacts-footer .link:focus
- {
+.contacts-footer .link:focus{
     color: var(--accent-color);
 }
 
 
 /* Navigation */
+
+.nav-list {
+    display: flex;
+    margin-left: 93px;
+}
+.nav-list .item + .item {
+    margin-left: 50px;
+}
+.nav-elements {
+    display: flex;
+}
 .nav-list .link{
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .nav-list .link.current {
     color: var(--accent-color);
@@ -102,15 +150,17 @@ ul {
 .hero {
     background-color: var(--accent-bg-color);
     letter-spacing: 0.06em;
+    text-align: center;
 }
 .hero .hero-title {
+    margin-bottom: 40px;
+
     color: var(--white-color);
     text-transform: uppercase;
     font-family: 'Roboto';
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
 }
 
 
