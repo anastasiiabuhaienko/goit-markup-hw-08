@@ -28,6 +28,18 @@ body{
     padding: 0;
     margin: 0;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 
 /* SECTION COMMON STYLES */
@@ -43,15 +55,12 @@ body{
     font-size: 26px;
     line-height: 1.19;
 }
-
 .logo .logo-accent {
     color: var(--accent-color);
 }
-
 .logo .logo-black {
     color: var(--black-color);
 }
-
 .logo .logo-white {
     color: var(--white-color);
 }
@@ -64,6 +73,7 @@ body{
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    background-color: teal;
 }
 
 /* HEADER */
@@ -82,11 +92,9 @@ body{
     display: flex;
     margin-left: auto;
 }
-
 .contacts .item + .item {
     margin-left: 50px;
 }
-
 .contacts .link {
     display: block;
     padding-top: 32px;
@@ -116,7 +124,7 @@ body{
 }
 
 
-/* Navigation */
+/* NAVIGATION */
 
 .nav-list {
     display: flex;
@@ -146,8 +154,10 @@ body{
 }
 
 
-/* Hero */
+/* HERO */
 .hero {
+    margin-bottom: 94px;
+
     background-color: var(--accent-bg-color);
     letter-spacing: 0.06em;
     text-align: center;
@@ -164,7 +174,7 @@ body{
 }
 
 
-/* Button */
+/* BUTTON */
 /* Настройки для часто встрещающихся кнопок */
 .button {
     background-color: var(--primary-bg-color);
@@ -176,7 +186,6 @@ body{
     text-align: center;
     letter-spacing: 0.03em;
 }
-
 .hero .button {
     color: var(--white-color);
     background-color: var(--accent-color);
@@ -198,14 +207,31 @@ body{
 
 
 
-/* Footer */
+/* FOOTER */
 footer {
     background-color: var(--accent-bg-color);
 }
 
 
-/* Features */
+/* FEATURES */
+.features {
+    margin-bottom: 94px;
+}
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.features-element {
+    width: 270px;
+    margin-right: 30px;
+    margin-bottom: 0;
+}
+.features-list .item:last-child {
+    margin-right: 0;
+}
 .features-list .title {
+    margin-bottom: 10px;
+    
     text-transform: uppercase;
     font-size: 14px;
     line-height: 1.14;
@@ -216,8 +242,23 @@ footer {
     line-height: 1.7;
 }
 
+/* SPECIALIZATION */
+.specialization .section-title {
+    margin-bottom: 50px;
+}
+.specialization-list {
+    display: flex;
+}
+.specialization-element {
+    margin-right: 30px;
+    margin-bottom: 0;
+}
+.specialization-element:last-child {
+    margin-right: 0;
+}
 
-/* Team */
+
+/* TEAM */
 .team-list .title {
     color: var(--primary-text-color);
     font-weight: 500;
