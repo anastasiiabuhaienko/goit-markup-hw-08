@@ -9,7 +9,9 @@
     --white-color-alpha:rgba(255, 255, 255, 0.6);
     --black-color: #000000;
     --line-color:#ECECEC;
-    --portfolio-elements-border-color:#EEEEEE;
+    --portfolio-card-border-color:#EEEEEE;
+
+    --specific-indent: 94px;
 }
 
 body{
@@ -25,6 +27,7 @@ body{
 .link {
     text-decoration: none;
 }
+/* Скидывание родных отступов у h, ul */
 .list {
     list-style: none;
     padding: 0;
@@ -173,7 +176,7 @@ header {
     text-align: center;
 }
 .hero .hero-title {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 
     color: var(--white-color);
     text-transform: uppercase;
@@ -222,6 +225,9 @@ header {
 
     border-radius: 4px;
 }
+.filters-list .special-button {
+    padding: 8px 25px;
+}
 .filters-list .button:hover,
 .filters-list .button:focus {
     color: var(--white-color);
@@ -233,8 +239,8 @@ header {
 /* FEATURES */
 
 .features {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: var(--specific-indent);
+    padding-bottom: var(--specific-indent);
 }
 .features-list {
     display: flex;
@@ -264,7 +270,7 @@ header {
 
 /* SPECIALIZATION */
 .specialization {
-    padding-bottom: 94px;
+    padding-bottom: var(--specific-indent);
 }
 .specialization-list {
     display: flex;
@@ -281,8 +287,8 @@ header {
 
 /* TEAM */
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: var(--specific-indent);
+    padding-bottom: var(--specific-indent);
     background-color: var(--primary-bg-color);
 }
 .team-list {
@@ -302,10 +308,9 @@ header {
 .team-list .item:last-child {
     margin-right: 0;
 }
-
 .team-list .title {
-    padding-top: 30px;
-    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 
     color: var(--primary-text-color);
     font-weight: 500;
@@ -314,7 +319,7 @@ header {
     text-align: center;
 }
 .team-list .description {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     color: var(--description-text-color);
     font-size: 16px;
     line-height: 1.19;
@@ -338,25 +343,21 @@ address {
 
 /* --------PORTFOLIO PAGE--------- */
 .portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: var(--specific-indent);
+    padding-bottom: var(--specific-indent);
 }
-/* PORTFOLIO FILTERS (BUTTONS) */
-
 .portfolio-filters {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 .filters-list {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-.filters-element {
+.filters-list .item {
     margin-right: 8px;
     margin-bottom: 0;
 }
-
 .filters-list .item:last-child {
     margin-right: 0;
 }
@@ -382,7 +383,6 @@ address {
     color: var(--primary-text-color);
 }
 .portfolio-list .title {
-
     color: var(--primary-text-color);
     letter-spacing: 0.06em;
     font-size: 18px;
@@ -394,13 +394,12 @@ address {
     font-size: 16px;
     line-height: 1.9;
 }
-
 .portfolio-card {
     padding: 20px 24px;
     
-    border-right: 1px solid var(--portfolio-elements-border-color);
-    border-bottom: 1px solid var(--portfolio-elements-border-color);
-    border-left: 1px solid var(--portfolio-elements-border-color);;
+    border-right: 1px solid var(--portfolio-card-border-color);
+    border-bottom: 1px solid var(--portfolio-card-border-color);
+    border-left: 1px solid var(--portfolio-card-border-color);;
 }
 
 
