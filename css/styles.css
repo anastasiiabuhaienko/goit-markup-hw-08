@@ -27,12 +27,13 @@ body{
 .link {
     text-decoration: none;
 }
-/* Скидывание родных отступов у h, ul */
+/* Скидывание родных отступов у h, ul, p */
 .list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+/* Избавляемся от родного отступа у картинки */
 img {
     display: block;
     max-width: 100%;
