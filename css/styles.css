@@ -13,7 +13,7 @@
     --portfolio-card-border-color:#EEEEEE;
     --bg-hero-color: #C4C4C4;
 
-    --specific-indent: 94px;
+    --specific-indent: 94px 0;
 }
 
 body{
@@ -257,8 +257,7 @@ header {
 /* FEATURES */
 
 .features {
-    padding-top: var(--specific-indent);
-    padding-bottom: var(--specific-indent);
+    padding: var(--specific-indent);
 }
 .features-list {
     display: flex;
@@ -295,7 +294,7 @@ header {
 
 /* SPECIALIZATION */
 .specialization {
-    padding-bottom: var(--specific-indent);
+    padding-bottom: 94px;
 }
 .specialization-list {
     display: flex;
@@ -312,8 +311,8 @@ header {
 
 /* TEAM */
 .team {
-    padding-top: var(--specific-indent);
-    padding-bottom: var(--specific-indent);
+    padding: var(--specific-indent);
+
     background-color: var(--primary-bg-color);
 }
 .team-list {
@@ -354,7 +353,16 @@ header {
 }
 
 
-
+/* CLIENTS */
+.clients {
+    padding: var(--specific-indent);
+}
+.clients .section-title {
+    margin-bottom: 50px;
+}
+.clients-list {
+    display: flex;
+}
 
 /* FOOTER */
 footer {
@@ -377,8 +385,7 @@ address {
 
 /* --------PORTFOLIO PAGE--------- */
 .portfolio {
-    padding-top: var(--specific-indent);
-    padding-bottom: var(--specific-indent);
+    padding: var(--specific-indent);
 }
 .filters-list {
     display: flex;
