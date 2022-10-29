@@ -5,11 +5,13 @@
     --active-color-button: #188CE8;
     --primary-bg-color: #F5F4FA;
     --accent-bg-color: #2F303A;
+    --hero-gradient: rgba(47, 48, 58, 0.4);
     --white-color: #ffffff;
     --white-color-alpha:rgba(255, 255, 255, 0.6);
     --black-color: #000000;
     --line-color:#ECECEC;
     --portfolio-card-border-color:#EEEEEE;
+    --bg-hero-color: #C4C4C4;
 
     --specific-indent: 94px;
 }
@@ -172,9 +174,9 @@ header {
     padding-top: 200px;
     padding-bottom: 200px;
 
-    background-color: var(--accent-bg-color);
+    background-color: var(--bg-hero-color);
     letter-spacing: 0.06em;
-    text-align: center;
+    text-align: center;   
 }
 .hero .hero-title {
     margin-bottom: 30px;
@@ -184,6 +186,22 @@ header {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+}
+.hero.overlay {
+    height: 600px;
+    max-width: 1600px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        to left, 
+        var(--hero-gradient),
+        var(--hero-gradient)
+    ),
+    url("../images/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 
