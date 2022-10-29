@@ -364,15 +364,17 @@ header {
 .clients-list {
     display: flex;
 }
-.clients-list .item {
-    margin-right:30px;
-
+.clients-list .client-logo {
     border: 1px solid var(--clients-element-color);
     border-radius: 4px;
+}
+.clients-list .item {
+    margin-right: 30px;
 }
 .clients .item:last-child { 
     margin-right: 0;
 }
+
 
 /* FOOTER */
 footer {
