@@ -283,6 +283,14 @@ header {
     font-size: 14px;
     line-height: 1.7;
 }
+.features-thumb {
+    background-color: var(--primary-bg-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+.features-icon {
+    margin: 25px 100px;
+}
 
 
 /* SPECIALIZATION */
@@ -424,8 +432,5 @@ address {
     border-bottom: 1px solid var(--portfolio-card-border-color);
     border-left: 1px solid var(--portfolio-card-border-color);;
 }
-
-
-
 
 
