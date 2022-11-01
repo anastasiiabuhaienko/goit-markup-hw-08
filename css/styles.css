@@ -377,6 +377,10 @@ header {
 }
 .client-logo {
     margin: 16px 32px;
+    fill: var(--clients-element-color);
+}
+.client-logo:hover {
+    fill:var(--accent-color);
 }
 
 
