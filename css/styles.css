@@ -353,6 +353,37 @@ header {
     text-align: center;
 }
 
+.social-links-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 16px;
+}
+
+.social-item:not(:last-child) {
+    margin-right: 10px;
+}
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+}
+.social-link:hover {
+    background-color: var(--accent-color);
+}
+.social-link:hover svg {
+    fill: var(--white-color);
+}
+.social-icon {
+    fill: var(--clients-element-color);
+}
+
+
 
 /* CLIENTS */
 .clients {
