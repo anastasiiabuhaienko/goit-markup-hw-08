@@ -353,36 +353,40 @@ header {
     text-align: center;
 }
 
-.social-links-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+.team.social-links-list {
     margin-top: 16px;
 }
 
 .social-item:not(:last-child) {
     margin-right: 10px;
 }
+.team .social-links {
+    background-color: var(--white-color);
+}
+.team .social-link:hover {
+    background-color: var(--accent-color);
+}
+.team .social-link:hover svg {
+    fill: var(--white-color);
+}
+.team .social-icon {
+    fill: var(--clients-element-color);
+}
+
+/* SOCIAL ICON COMMON SETTINGS */
 .social-link {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 44px;
     height: 44px;
-    background-color: var(--white-color);
     border-radius: 50%;
 }
-.social-link:hover {
-    background-color: var(--accent-color);
+.social-links-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.social-link:hover svg {
-    fill: var(--white-color);
-}
-.social-icon {
-    fill: var(--clients-element-color);
-}
-
 
 
 /* CLIENTS */
@@ -431,6 +435,35 @@ address {
 }
 .footer .item:last-child {
     margin-bottom: 0;
+}
+.footer .social-link {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.footer .social-link:hover {
+    background-color: var(--accent-color);
+}
+.footer .social-link:hover svg {
+    fill: var(--white-color);
+}
+.footer .social-icon {
+    fill: var(--white-color);
+}
+.footer .social-links-invite {
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+.footer .container {
+    display: flex;
+}
+.footer .contacts-footer-box:not(:last-child) {
+    margin-right:  70px;
+}
+.footer .social-links-footer {
+    margin-top: 12px;
+    margin-bottom: 40px;
+}
+.footer .social-links-list {
+    margin-top: 20px;
 }
 
 
