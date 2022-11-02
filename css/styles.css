@@ -308,6 +308,10 @@ header {
 .specialization-list .item:last-child {
     margin-right: 0;
 }
+/* на случай если не загрузилась картинка */
+.specialization .specialization-photo {
+    width: 370px;
+}
 
 
 /* TEAM */
