@@ -149,7 +149,9 @@ header {
     fill: var(--description-text-color);
 }
 .contacts .mail-link:hover svg,
-.contacts .phone-link:hover svg {
+.contacts .mail-link:focus svg,
+.contacts .phone-link:hover svg,
+.contacts .phone-link:focus svg {
     fill: var(--accent-color);
 }
 
