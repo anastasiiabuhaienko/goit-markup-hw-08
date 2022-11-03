@@ -393,10 +393,12 @@ header {
 .team .social-links {
     background-color: var(--white-color);
 }
-.team .social-link:hover {
+.team .social-link:hover,
+.team .social-link:focus {
     background-color: var(--accent-color);
 }
-.team .social-link:hover svg {
+.team .social-link:hover svg,
+.team .social-link:focus svg {
     fill: var(--white-color);
 }
 .team .social-icon {
@@ -452,10 +454,12 @@ header {
     margin: 16px 32px;
     fill: var(--clients-element-color);
 }
-.clients .clients-link:hover {
+.clients .clients-link:hover,
+.clients .clients-link:focus {
     border: 1px solid var(--accent-color);
 }
-.clients .clients-link:hover svg {
+.clients .clients-link:hover svg,
+.clients .clients-link:focus svg {
     fill: var(--accent-color);
 }
 
@@ -482,12 +486,11 @@ address {
 .footer .social-link {
     background-color: rgba(255, 255, 255, 0.1);
 }
-.footer .social-link:hover {
+.footer .social-link:hover,
+.footer .social-link:focus {
     background-color: var(--accent-color);
 }
-.footer .social-link:hover svg {
-    fill: var(--white-color);
-}
+
 .footer .social-icon {
     fill: var(--white-color);
 }
