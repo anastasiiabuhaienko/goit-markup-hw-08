@@ -439,8 +439,12 @@ header {
     display: flex;
 }
 .clients .clients-link {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     width: 170px;
+    height: 92px;
     
     border: 1px solid var(--clients-element-color);
     border-radius: 4px;
@@ -453,7 +457,6 @@ header {
     margin-right: 0;
 }
 .client-logo {
-    margin: 16px 32px;
     fill: var(--clients-element-color);
 }
 .clients .clients-link:hover,
