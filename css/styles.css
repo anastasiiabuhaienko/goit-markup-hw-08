@@ -13,6 +13,7 @@
     --portfolio-card-border-color:#EEEEEE;
     --bg-hero-color: #C4C4C4;
     --clients-element-color: #AFB1B8;
+    --backdrop-color: rgba(0, 0, 0, 0.2);
 
     --specific-indent: 94px 0;
 }
@@ -237,16 +238,23 @@ header {
     background-position: center;
 }
 .hero .backdrop {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--backdrop-color);
 }
 .hero .modal {
-    display: flex;
     position: absolute;
-    top: -259px;
-    left: 321px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-    width: 528px;
-    height: 581px;
+    min-width: 528px;
+    min-height: 581px;
 
     background: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -256,6 +264,7 @@ header {
     position: absolute;
     top:0;
     right: 0;
+    display: flex;
 
     margin-top: 8px;
     margin-right: 8px;
@@ -265,9 +274,12 @@ header {
     width: 30px;
     height: 30px;
   
-
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+}
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
 }
 
 
