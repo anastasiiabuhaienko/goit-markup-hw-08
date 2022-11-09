@@ -571,7 +571,7 @@ header {
 .clients .item:last-child {
     margin-right: 0;
 }
-.client-logo {
+.clients .client-logo {
     fill: var(--clients-element-color);
 
     transition-property: fill;
@@ -609,14 +609,14 @@ address {
 }
 .footer .social-link {
     background-color: rgba(255, 255, 255, 0.1);
-}
-.footer .social-link:hover,
-.footer .social-link:focus {
-    background-color: var(--accent-color);
 
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer .social-link:hover,
+.footer .social-link:focus {
+    background-color: var(--accent-color);
 }
 
 .footer .social-icon {
@@ -669,6 +669,10 @@ address {
     
     margin-right: 30px;
     margin-bottom: 30px;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-list .item:nth-child(3n) {
     margin-right: 0px;
@@ -679,6 +683,17 @@ address {
 .portfolio-list .portfolio-link {
     display: block;
     color: var(--primary-text-color);
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-list .portfolio-link:hover,
+.portfolio-list .portfolio-link:focus {
+    box-shadow:
+        0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-list .title {
     margin-bottom: 4px;
@@ -695,49 +710,47 @@ address {
 }
 .portfolio-card {
     padding: 20px 24px;
-    
+   
     border-right: 1px solid var(--portfolio-card-border-color);
     border-bottom: 1px solid var(--portfolio-card-border-color);
     border-left: 1px solid var(--portfolio-card-border-color);;
 }
-.portfolio-list .portfolio-link:hover {
-    box-shadow: 
-    0px 1px 1px rgba(0, 0, 0, 0.12), 
-    0px 4px 4px rgba(0, 0, 0, 0.06), 
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 /* на случай если не будет загружена картинка добавлен блок с фиксированной шириной */
 .portfolio .portfolio-photo {
+    position: relative;
+
     width: 370px;
+
+    overflow: hidden;    
 }
 
-.portfolio-overlay .text-overlay {
-    margin: 63px 24px;
+.portfolio-photo .text-overlay {
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    
+    padding: 63px 24px;
 
     font-size: 18px;
     line-height: 1.55;
+
+    opacity: 0;
  
     color: var(--white-color);
-}
-
-.portfolio-overlay {
-    position: absolute;
-    bottom: 110px;
-    left: 0;
-    top:0;
-    opacity: 0;
-
     background-color: rgba(33, 150, 243, 0.9);
 
-    transition-property:
-    transition-duration: 1000ms;
+    transform: translateY(100%);
+    transition: transform;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-list .item:hover .portfolio-overlay {
+
+.portfolio-list .item:hover .text-overlay {
     opacity: 1;
+
+    transform: translateY(0);
 }
 
