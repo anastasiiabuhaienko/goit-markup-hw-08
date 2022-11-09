@@ -623,6 +623,8 @@ address {
     flex-wrap: wrap;
 }
 .portfolio-list .item {
+    position: relative;
+    
     margin-right: 30px;
     margin-bottom: 30px;
 }
@@ -665,5 +667,27 @@ address {
 /* на случай если не будет загружена картинка добавлен блок с фиксированной шириной */
 .portfolio .portfolio-photo {
     width: 370px;
+}
+
+.portfolio-overlay .text-overlay {
+    margin: 63px 24px;
+
+    font-size: 18px;
+    line-height: 1.55;
+ 
+    color: var(--white-color);
+}
+
+.portfolio-overlay {
+    position: absolute;
+    bottom: 110px;
+    left: 0;
+    top:0;
+    opacity: 0;
+
+    background-color: rgba(33, 150, 243, 0.9);
+}
+.portfolio-list .item:hover .portfolio-overlay {
+    opacity: 1;
 }
 
