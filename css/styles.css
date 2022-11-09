@@ -139,6 +139,10 @@ header {
 .contacts-footer .link:hover,
 .contacts-footer .link:focus{
     color: var(--accent-color);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts .mail-link-icon,
 .contacts .phone-link-icon {
@@ -154,6 +158,10 @@ header {
 .contacts .phone-link:hover svg,
 .contacts .phone-link:focus svg {
     fill: var(--accent-color);
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -200,6 +208,10 @@ header {
 .nav-list .link:hover,
 .nav-list .link:focus {
     color: var(--accent-color);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -313,6 +325,10 @@ header {
 .hero .button:hover,
 .hero .button:focus {
     background-color: var(--active-color-button);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* FILTERS BUTTON */
@@ -332,6 +348,10 @@ header {
     0px 3px 1px rgba(0, 0, 0, 0.1), 
     0px 1px 2px rgba(0, 0, 0, 0.08), 
     0px 2px 2px rgba(0, 0, 0, 0.12);
+
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -479,10 +499,20 @@ header {
 .team .social-link:hover,
 .team .social-link:focus {
     background-color: var(--accent-color);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    
 }
 .team .social-link:hover svg,
 .team .social-link:focus svg {
     fill: var(--white-color);
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team .social-icon {
     fill: var(--clients-element-color);
@@ -543,10 +573,18 @@ header {
 .clients .clients-link:hover,
 .clients .clients-link:focus {
     border: 1px solid var(--accent-color);
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients .clients-link:hover svg,
 .clients .clients-link:focus svg {
     fill: var(--accent-color);
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -575,6 +613,10 @@ address {
 .footer .social-link:hover,
 .footer .social-link:focus {
     background-color: var(--accent-color);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer .social-icon {
@@ -663,6 +705,10 @@ address {
     0px 1px 1px rgba(0, 0, 0, 0.12), 
     0px 4px 4px rgba(0, 0, 0, 0.06), 
     1px 4px 6px rgba(0, 0, 0, 0.16);
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* на случай если не будет загружена картинка добавлен блок с фиксированной шириной */
 .portfolio .portfolio-photo {
@@ -686,6 +732,10 @@ address {
     opacity: 0;
 
     background-color: rgba(33, 150, 243, 0.9);
+
+    transition-property:
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-list .item:hover .portfolio-overlay {
     opacity: 1;
