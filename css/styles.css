@@ -386,6 +386,8 @@ header {
     margin-top: 50px;
 }
 .specialization .item {
+    position: relative;
+
     margin-right: 30px;
     margin-bottom: 0;
 }
@@ -396,7 +398,28 @@ header {
 .specialization .specialization-photo {
     width: 370px;
 }
+.specialization-title .title {
+    margin-top: 27px;
+    margin-bottom: 27px;
 
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+.specialization-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 370px;
+    height: 70px;
+
+
+    background-color: rgba(47, 48, 58, 0.8);
+}
 
 /* TEAM */
 .team {
