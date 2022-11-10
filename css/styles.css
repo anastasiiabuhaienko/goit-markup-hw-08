@@ -296,6 +296,13 @@ header {
     pointer-events: none;
 }
 
+.hero .modal-button:hover,
+.hero .modal-button:focus {
+    background-color: var(--active-color-button);
+    fill: var(--white-color);
+}
+
+
 
 /* BUTTON */
 /* Настройки для часто встрещающихся кнопок */
