@@ -737,8 +737,7 @@ address {
     font-size: 18px;
     line-height: 1.55;
 
-    opacity: 0;
- 
+
     color: var(--white-color);
     background-color: rgba(33, 150, 243, 0.9);
 
@@ -753,7 +752,6 @@ address {
 
 .portfolio-list .item:hover .text-overlay,
 .portfolio-list .item:focus .text-overlay {
-    opacity: 1;
 
     transform: translateY(0);
 }
