@@ -743,12 +743,16 @@ address {
     background-color: rgba(33, 150, 243, 0.9);
 
     transform: translateY(100%);
+
     transition: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    
 }
 
-.portfolio-list .item:hover .text-overlay {
+.portfolio-list .item:hover .text-overlay,
+.portfolio-list .item:focus .text-overlay {
     opacity: 1;
 
     transform: translateY(0);
