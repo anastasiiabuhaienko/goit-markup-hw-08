@@ -283,6 +283,7 @@ header {
     top:0;
     right: 0;
     display: flex;
+    align-items: center;
 
     margin-top: 8px;
     margin-right: 8px;
@@ -302,8 +303,7 @@ header {
 
 .hero .modal-button:hover,
 .hero .modal-button:focus {
-    background-color: var(--active-color-button);
-    fill: var(--white-color);
+    fill: var(--accent-color);
 }
 
 
@@ -431,22 +431,24 @@ header {
     width: 370px;
 }
 .specialization-title .title {
-    margin-top: 27px;
-    margin-bottom: 27px;
-
     font-size: 14px;
     line-height: 1.14;
     text-align: center;
+    font-weight: 700;
 
     text-transform: uppercase;
     color: var(--white-color);
 }
 .specialization-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
     position: absolute;
     bottom: 0;
     left: 0;
 
-    width: 370px;
+    width: 100%;
     height: 70px;
 
 
