@@ -624,7 +624,8 @@ address {
 .footer .social-icon {
     fill: var(--white-color);
 }
-.footer .social-links-invite {
+.footer .social-links-title,
+.footer .subscription-title{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -635,12 +636,58 @@ address {
     display: flex;
     align-items: baseline;
 }
-.footer .contacts-footer-box:not(:last-child) {
+.footer .contacts-box-footer {
     margin-right:  70px;
 }
 .footer .social-links-list {
     margin-top: 20px;
 }
+.footer .social-links-footer {
+    margin-right: 93px;
+}
+
+/* FORM SUBSCRIPTION */
+.footer .subscription-form {
+    margin-top: 20px;
+}
+.footer .subscription-button {
+    /* position: absolute; */
+    width: 200px;
+    height: 50px;
+    padding-left: 0;
+    padding-right: 0;
+
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+}
+.footer .subscription-input {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+
+    padding: 15px 16px;
+
+    color: var(--white-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0);
+}
+.footer .send-button-icon {
+    fill: var(--white-color);
+}
+
+
+
+
 
 
 /* --------PORTFOLIO PAGE--------- */
