@@ -433,16 +433,17 @@
                     </li>
                 </ul>
             </div>
-            <div class="subscription">
-                <p class="subscription-title list">Підпишіться на розсилку</p>
-                
+            <div class="subscription">               
                 <form name="subscription-form" class="subscription-form">
-                    <input type="email" name="email" placeholder="E-mail" class="subscription-input" required>
-                    <button type="submit" class="subscription-button">Підписатися
-                        <!-- <svg width="24px" height="24px">
-                            <use href="./images/icons.svg#send" class="send-button-icon"></use>
-                        </svg> -->
-                    </button>
+                    <div class="subscription-field">
+                        <label for="subscription-email" class="subscription-title">Підпишіться на розсилку</label>
+                        <input type="email" name="email" id="subscription-email" placeholder="E-mail" class="subscription-input" required>
+                    </div>
+                    <div class="subscription-button-field">
+                        <button type="submit" class="subscription-button">Підписатися
+                        </button>
+                    </div>
+                    
                 </form>
             </div>
         </div>
