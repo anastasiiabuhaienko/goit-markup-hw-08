@@ -332,14 +332,16 @@ header {
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.06em;
-
     border-radius: 4px;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero .button:hover,
 .hero .button:focus {
     background-color: var(--active-color-button);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* FILTERS BUTTON */
@@ -648,31 +650,41 @@ address {
 
 /* FORM SUBSCRIPTION */
 .footer .subscription-form {
+    display: flex;
+    align-items: center;
     margin-top: 20px;
 }
 .footer .subscription-button {
-    /* position: absolute; */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 200px;
     height: 50px;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
 
     background-color: var(--accent-color);
     color: var(--white-color);
     cursor: pointer;
     border: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
+
+    transition:
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer .subscription-button:focus,
+.footer .subscription-button:hover {
+    background-color: var(--active-color-button);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .footer .subscription-input {
     width: 358px;
     height: 50px;
     margin-right: 12px;
-
     padding: 15px 16px;
 
     color: var(--white-color);
@@ -681,9 +693,23 @@ address {
     border-radius: 4px;
     background-color: rgba(255, 255, 255, 0);
 }
-.footer .send-button-icon {
-    fill: var(--white-color);
+.footer .subscription-input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
 }
+
+.footer .subscription-button::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+
+    fill: var(--white-color);
+    background-image: url(../images/send.svg);
+}
+
+
 
 
 
