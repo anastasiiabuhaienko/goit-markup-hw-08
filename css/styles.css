@@ -356,6 +356,11 @@ header {
 .hero .contract-link {
     color: var(--accent-color);
 }
+.hero .feedback-button {
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+}
 
 
 /* BUTTON */
