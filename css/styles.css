@@ -346,9 +346,9 @@ header {
     height: 40px;
     padding: 11px 12px 11px 42px;
 }
-.hero .form-input ~ .modal-icon{
+/* .hero .form-input ~ .modal-icon{
     fill: var(--accent-color);
-}
+} */
 .hero .form-textarea {
     padding: 12px 16px;
     resize: none;
@@ -359,6 +359,7 @@ header {
     
     color: rgba(117, 117, 117, 0.5);
 }
+/* Скрываем чекбокс */
 .hero .feedback-checkbox {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -366,14 +367,24 @@ header {
 
     position: absolute;
 }
+/* Настраиваем новый чекбокс */
 .hero .checkbox {
     position: absolute;
-    width: 16px;
-    height: 15px;
-    border: solid 1px var(--primary-text-color);
-    border-radius: 2px;
+    width: 15px;
+    height: 15px;    
 }
+.hero .checkbox-icon {
+    position: absolute;
+    /* margin-left: 12px; */
+}
+.hero .checkbox-label {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 
+    padding-left: 34px;
+    padding-right: 12px;
+}
 
 
 .hero .contract-link {
@@ -392,12 +403,12 @@ header {
 
     fill: var(--primary-text-color);
     
-    translate: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* translate: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
-.hero .modal-icon:hover,
+/* .hero .modal-icon:hover,
 .hero .modal-icon:focus {
     fill: var(--accent-color);
-}
+} */
 
 
 
