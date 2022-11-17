@@ -216,7 +216,7 @@ header {
 
     background-color: var(--bg-hero-color);
     letter-spacing: 0.06em;
-    text-align: center;   
+    /* text-align: center;    */
 }
 .hero .hero-title {
     margin-bottom: 30px;
@@ -320,11 +320,20 @@ header {
     letter-spacing: 0.03em;
 }
 .hero .label-title {
+    position: relative;
+    display: block;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
     color: var(--description-text-color);
 }
+.hero .label-title:not(:last-child) .form-input {
+    margin-bottom: 10px;
+}
+.hero .label-title textarea{
+    margin-bottom: 20px;
+}
+
 /* Общее в стилях input */
 .hero .form-item {
     width: 100%;
@@ -333,18 +342,15 @@ header {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }
-
 .hero .form-input {
     height: 40px;
-    margin-top: 4px;
-    padding: 11px 12px;
+    padding: 11px 12px 11px 42px;
 }
-.hero .form-input:not(:last-child) {
-    margin-bottom: 10px;
+.hero .form-input ~ .modal-icon{
+    fill: var(--accent-color);
 }
 .hero .form-textarea {
     padding: 12px 16px;
-    margin-bottom: 20px;
     resize: none;
 }
 .hero .form-textarea::placeholder {
@@ -353,6 +359,23 @@ header {
     
     color: rgba(117, 117, 117, 0.5);
 }
+.hero .feedback-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    position: absolute;
+}
+.hero .checkbox {
+    position: absolute;
+    width: 16px;
+    height: 15px;
+    border: solid 1px var(--primary-text-color);
+    border-radius: 2px;
+}
+
+
+
 .hero .contract-link {
     color: var(--accent-color);
 }
@@ -361,6 +384,25 @@ header {
     height: 50px;
     margin-top: 30px;
 }
+.hero .modal-icon {
+    position: absolute;
+    display: inline-block;
+    top: 28px;
+    left: 12px;
+
+    fill: var(--primary-text-color);
+    
+    translate: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero .modal-icon:hover,
+.hero .modal-icon:focus {
+    fill: var(--accent-color);
+}
+
+
+
+
+
 
 
 /* BUTTON */
