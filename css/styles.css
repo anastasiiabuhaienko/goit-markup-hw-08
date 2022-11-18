@@ -216,7 +216,7 @@ header {
 
     background-color: var(--bg-hero-color);
     letter-spacing: 0.06em;
-    /* text-align: center;    */
+    text-align: center;   
 }
 .hero .hero-title {
     margin-bottom: 30px;
@@ -312,6 +312,8 @@ header {
 
 .hero .modal-form {
     padding: 40px;
+    height: 100%;
+    width: 100%;
 }
 .hero .modal-form-title {
     margin-bottom: 12px;
@@ -354,6 +356,7 @@ header {
     display: inline-block;
     margin-bottom: 4px;
     width: 100%;
+    text-align: left;
 
     font-size: 12px;
     line-height: 1.16;
