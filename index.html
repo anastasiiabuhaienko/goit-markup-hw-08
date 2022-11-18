@@ -67,7 +67,12 @@
 
                                 <label for="user-name" class="modal-label">Ім'я</label>
                                 <div class="input-wrapper">
-                                    <input name="user-name" id="user-name" type="text" class="modal-input modal-cell">
+                                    <input 
+                                        name="user-name" 
+                                        id="user-name" 
+                                        type="text" 
+                                        class="modal-input modal-cell"
+                                    >
                                     <svg wight="18" height="18" class="input-icon">
                                         <use href="./images/icons.svg#modal-person"></use>
                                     </svg>
@@ -76,7 +81,13 @@
 
                                 <label for="user-phone" class="modal-label">Телефон</label>
                                 <div class="input-wrapper">
-                                    <input name="user-phone" id="user-phone" type="tel" class="modal-input modal-cell" required>
+                                    <input 
+                                        name="user-phone" 
+                                        id="user-phone" 
+                                        type="tel" 
+                                        class="modal-input modal-cell" 
+                                        required
+                                    >
                                     <svg wight="18" height="18" class="input-icon">
                                         <use href="./images/icons.svg#modal-phone"></use>
                                     </svg>
@@ -84,7 +95,12 @@
                                 
                                 <label for="user-email" class="modal-label">Пошта</label>
                                 <div class="input-wrapper">
-                                    <input name="user-email" id="user-email" type="email" class="modal-input modal-cell">
+                                    <input 
+                                        name="user-email" 
+                                        id="user-email" 
+                                        type="email" 
+                                        class="modal-input modal-cell"
+                                    >
                                     <svg wight="18" height="18" class="input-icon">
                                         <use href="./images/icons.svg#modal-email"></use>
                                     </svg>
@@ -96,10 +112,29 @@
                                     name="user-comment" 
                                     id="user-comment"
                                     type="text"
-                                    rows="7" 
+                                    rows="5" 
                                     placeholder="Введіть текст" 
                                     class="modal-input modal-cell-textarea"></textarea>
+                                
+                                <div class="input-wrapper input-checkbox">
+                                    <input 
+                                        name="checkbox-accept" 
+                                        id="checkbox-accept" 
+                                        type="checkbox" 
+                                        value="agree"
+                                        class="checkbox-hidden"
+                                    >
+                                    <label for="checkbox-accept" class="checkbox-accept">
+                                        <span class="icon-wrapper">
+                                            <svg width="16" height="15" class="accept-icon">
+                                                <use href="./images/icons.svg#icon-check"></use>
+                                            </svg>
+                                        </span>
+                                        Погоджуюся з розсилкою та приймаю Умови договору
+                                    </label>
 
+                                </div>
+                                
 
 
 

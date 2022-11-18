@@ -353,8 +353,12 @@ header {
 .hero .modal-label{
     display: inline-block;
     margin-bottom: 4px;
-
     width: 100%;
+
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--description-text-color);
 }
 .hero .input-wrapper {
     position: relative;
@@ -377,7 +381,47 @@ header {
 .hero .modal-input:focus {
     border-color: var(--accent-color);
 }
+/* Скрываем родной checkbox */
+.hero .checkbox-hidden {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+.hero .input-checkbox {
+    margin:0 14px;
+}
+.hero .checkbox-accept {
+    display: flex;
+    align-items: center;
 
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--description-text-color);
+}
+.hero .icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--primary-text-color);
+    border-radius: 2px;
+    margin-right: 8px;
+}
+.checkbox-accept .accept-icon {
+    fill: transparent;
+}
+.input-checkbox input:checked + .checkbox-accept .icon-wrapper {
+    background-color: var(--accent-color);
+    border: none;
+}
+
+
+.input-checkbox input:checked + .checkbox-accept .accept-icon {
+    fill: var(--white-color);
+}
 
 
 
