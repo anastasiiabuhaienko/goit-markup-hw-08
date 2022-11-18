@@ -330,8 +330,7 @@ header {
     border: 1px solid rgba(33, 33, 33, 0.2);
 }
 .hero .modal-cell {
-    margin-bottom: 10px;
-    padding: 11px 12px;
+    padding: 11px 12px 11px 42px;
 
     height: 40px;
 }
@@ -354,117 +353,19 @@ header {
 
     width: 100%;
 }
-
-
-
-
-
-/* HERO MODAL FORM */
-
-/* .hero .feedback-form {
-    padding: 40px;
-}
-.hero .feedback-form-title {
-    margin-bottom: 12px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    letter-spacing: 0.03em;
-}
-.hero .label-title {
+.hero .input-wrapper {
     position: relative;
-    display: block;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: var(--description-text-color);
-}
-.hero .label-title:not(:last-child) .form-input {
     margin-bottom: 10px;
 }
-.hero .label-title textarea{
-    margin-bottom: 20px;
-}
-
-/* Общее в стилях input */
-.hero .form-item {
-    width: 100%;
-    margin-top: 4px;
-
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-}
-.hero .form-input {
-    height: 40px;
-    padding: 11px 12px 11px 42px;
-}
-/* .hero .form-input ~ .modal-icon{
-    fill: var(--accent-color);
-} */
-.hero .form-textarea {
-    padding: 12px 16px;
-    resize: none;
-}
-.hero .form-textarea::placeholder {
-    font-size: 12px;
-    line-height: 1.16;
-    
-    color: rgba(117, 117, 117, 0.5);
-}
-/* Скрываем чекбокс */
-.hero .feedback-checkbox {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-
+.hero .input-icon {
     position: absolute;
-}
-/* Настраиваем новый чекбокс */
-.hero .checkbox {
-    position: absolute;
-    width: 15px;
-    height: 15px;    
-}
-.hero .checkbox-icon {
-    position: absolute;
-    /* margin-left: 12px; */
-}
-.hero .checkbox-label {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    width:18px;
+    height: 18px;
+    left: 12px; 
+    top: 50%;
+    transform: translateY(-50%);
 
-    padding-left: 34px;
-    padding-right: 12px;
 }
-
-
-.hero .contract-link {
-    color: var(--accent-color);
-}
-.hero .feedback-button {
-    width: 200px;
-    height: 50px;
-    margin-top: 30px;
-}
-.hero .modal-icon {
-    position: absolute;
-    display: inline-block;
-    top: 28px;
-    left: 12px;
-
-    fill: var(--primary-text-color);
-    
-    /* translate: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-}
-/* .hero .modal-icon:hover,
-.hero .modal-icon:focus {
-    fill: var(--accent-color);
-} */
- */
-
-
-
 
 
 

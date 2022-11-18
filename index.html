@@ -66,26 +66,30 @@
                                 <p class="modal-form-title list">Залиште свої дані, ми вам передзвонимо</p>
 
                                 <label for="user-name" class="modal-label">Ім'я</label>
-                                <input 
-                                    name="user-name" 
-                                    id="user-name"
-                                    type="text" 
-                                    class="modal-input modal-cell">
+                                <div class="input-wrapper">
+                                    <input name="user-name" id="user-name" type="text" class="modal-input modal-cell">
+                                    <svg wight="18" height="18" class="input-icon">
+                                        <use href="./images/icons.svg#modal-person"></use>
+                                    </svg>
+                                </div>
                                 
+
                                 <label for="user-phone" class="modal-label">Телефон</label>
-                                <input 
-                                    name="user-phone" 
-                                    id="user-phone"
-                                    type="tel" 
-                                    class="modal-input modal-cell"
-                                    required>
+                                <div class="input-wrapper">
+                                    <input name="user-phone" id="user-phone" type="tel" class="modal-input modal-cell" required>
+                                    <svg wight="18" height="18" class="input-icon">
+                                        <use href="./images/icons.svg#modal-phone"></use>
+                                    </svg>
+                                </div>
                                 
                                 <label for="user-email" class="modal-label">Пошта</label>
-                                <input
-                                    name="user-email"  
-                                    id="user-email"
-                                    type="email" 
-                                    class="modal-input modal-cell">
+                                <div class="input-wrapper">
+                                    <input name="user-email" id="user-email" type="email" class="modal-input modal-cell">
+                                    <svg wight="18" height="18" class="input-icon">
+                                        <use href="./images/icons.svg#modal-email"></use>
+                                    </svg>
+                                </div>
+                                
                                 
                                 <label for="user-comment" class="modal-label">Коментар</label>
                                 <textarea 
