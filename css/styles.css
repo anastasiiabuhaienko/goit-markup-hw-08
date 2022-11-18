@@ -416,11 +416,11 @@ header {
 .checkbox-accept .accept-icon {
     fill: transparent;
 }
-.input-checkbox input:checked + .checkbox-accept .icon-wrapper {
+.hero .input-checkbox input:checked + .checkbox-accept .icon-wrapper {
     background-color: var(--accent-color);
     border: none;
 }
-.input-checkbox input:checked + .checkbox-accept .accept-icon {
+.hero .input-checkbox input:checked + .checkbox-accept .accept-icon {
     fill: var(--white-color);
 }
 .hero .checkbox-link {
