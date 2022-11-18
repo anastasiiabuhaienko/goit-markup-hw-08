@@ -417,10 +417,15 @@ header {
     background-color: var(--accent-color);
     border: none;
 }
-
-
 .input-checkbox input:checked + .checkbox-accept .accept-icon {
     fill: var(--white-color);
+}
+.hero .checkbox-link {
+    color: var(--accent-color);
+}
+.hero .feedback-form-button {
+    width: 200px;
+    margin-top: 30px;
 }
 
 
