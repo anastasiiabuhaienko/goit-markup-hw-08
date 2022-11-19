@@ -262,23 +262,22 @@ header {
     position: absolute;
     top: 50%;
     left: 50%;
-
+    padding: 40px;
     width: 528px;
-    height: 581px;
 
     background: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;   
 
     transform: translate(-50%, -50%) scale(1) rotateY(360deg);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0.9);
     
 }
 
-.hero .modal-button {
+.modal .modal-button {
     position: absolute;
     top:0;
     right: 0;
@@ -295,27 +294,28 @@ header {
  
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+
 }
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
 }
 
-.hero .modal-button:hover,
-.hero .modal-button:focus {
+.modal-button:hover,
+.modal-button:focus {
     fill: var(--accent-color);
 }
 
 
 
-/* HERO MODAL FORM NEW*/
+/* HERO MODAL FORM*/
 
-.hero .modal-form {
-    padding: 40px;
+.modal-form {
+
     height: 100%;
     width: 100%;
 }
-.hero .modal-form-title {
+.modal-form-title {
     margin-bottom: 12px;
 
     font-weight: 700;
@@ -325,7 +325,7 @@ header {
     letter-spacing: 0.03em;
 }
 /* Общее в стилях input */
-.hero .modal-input {
+.modal-input {
     width: 100%;
     
     border-radius: 4px;
@@ -334,25 +334,27 @@ header {
     transition:
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero .modal-cell {
+.modal-cell {
     padding: 12px 12px 12px 42px;
-
     height: 40px;
+
+    outline: none;
 }
-.hero .modal-cell-textarea {
+.modal-cell-textarea {
     resize: none;
     padding: 12px 16px;
-
     margin-bottom: 20px;
+
+    outline: none;
 }
-.hero .modal-input::placeholder {
+.modal-input::placeholder {
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
         
     color: rgba(117, 117, 117, 0.5);
 }
-.hero .modal-label{
+.modal-label{
     display: inline-block;
     margin-bottom: 4px;
     width: 100%;
@@ -363,11 +365,11 @@ header {
     letter-spacing: 0.01em;
     color: var(--description-text-color);
 }
-.hero .input-wrapper {
+.modal .input-wrapper {
     position: relative;
     margin-bottom: 10px;
 }
-.hero .input-icon {
+.modal .input-icon {
     position: absolute;
     width:18px;
     height: 18px;
@@ -378,32 +380,35 @@ header {
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero .modal-input:focus + .input-icon {
+.modal-input:focus + .input-icon,
+.modal-input:hover + .input-icon {
     fill: var(--accent-color);
 }
-.hero .modal-input:focus {
+.modal-input:focus,
+.modal-input:hover {
     border-color: var(--accent-color);
 }
 /* Скрываем родной checkbox */
-.hero .checkbox-hidden {
+.modal .checkbox-hidden {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     position: absolute;
 }
-.hero .input-checkbox {
-    margin:0 14px;
+.modal .input-checkbox {
+    margin:0;
 }
-.hero .checkbox-accept {
+.modal .checkbox-accept {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--description-text-color);
 }
-.hero .icon-wrapper {
+.modal .icon-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -412,21 +417,22 @@ header {
     border: 2px solid var(--primary-text-color);
     border-radius: 2px;
     margin-right: 8px;
+    cursor: pointer;
 }
 .checkbox-accept .accept-icon {
     fill: transparent;
 }
-.hero .input-checkbox input:checked + .checkbox-accept .icon-wrapper {
+.modal .input-checkbox input:checked + .checkbox-accept .icon-wrapper {
     background-color: var(--accent-color);
     border: none;
 }
-.hero .input-checkbox input:checked + .checkbox-accept .accept-icon {
+.modal .input-checkbox input:checked + .checkbox-accept .accept-icon {
     fill: var(--white-color);
 }
-.hero .checkbox-link {
+.modal .checkbox-link {
     color: var(--accent-color);
 }
-.hero .button.feedback-form-button {
+.modal .button.feedback-form-button {
     margin-top: 30px;
     padding: 10px 52px;
 }
@@ -771,28 +777,21 @@ address {
 .footer .social-links-list {
     margin-top: 20px;
 }
-.footer .social-links-footer {
-    margin-right: 93px;
-}
+
+
 
 /* FORM SUBSCRIPTION */
 .footer .subscription {
-    position: relative;
-    width: 570px;
-    right: 0;
-}
-.footer .subscription-form {
-    display: flex;
-    align-items: center;
-}
-.footer .subscription-field {
-    display: flex;
-    flex-direction: column;
-    margin-right: 12px;
+    margin-left: auto;
 }
 .footer .subscription-title {
     margin-bottom: 20px;
 }
+
+.footer .subscription-field {
+    display: flex;
+}
+
 .footer .subscription-input {
     width: 358px;
     height: 50px;
@@ -803,24 +802,23 @@ address {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: rgba(255, 255, 255, 0);
+    outline: 0;
 }
 .footer .subscription-input::placeholder {
     font-size: 16px;
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
 }
-.footer .subscription-button-field {
-    position: absolute;
-    right: 0;
-    top: 35px;
-}
+
 .footer .subscription-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+
     width: 200px;
     height: 50px;
     padding: 0;
+    margin-left: 12px;
 
     background-color: var(--accent-color);
     color: var(--white-color);
