@@ -426,9 +426,9 @@ header {
 .hero .checkbox-link {
     color: var(--accent-color);
 }
-.hero .feedback-form-button {
-    width: 200px;
+.hero .button.feedback-form-button {
     margin-top: 30px;
+    padding: 10px 52px;
 }
 
 
