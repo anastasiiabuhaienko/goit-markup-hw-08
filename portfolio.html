@@ -25,12 +25,12 @@
     
                 <ul class="nav-list list">
                     <li class="nav-list__item">
-                        <a href="./index.html" class="nav-list__link link">
+                        <a href="./index.html" class="nav-list__link nav-list__link--current link">
                             Студія
                         </a>
                     </li>
                     <li class="nav-list__item">
-                        <a href="./portfolio.html" class="nav-list__link nav-list__link--current link">
+                        <a href="./portfolio.html" class="nav-list__link link">
                             Портфоліо
                         </a>
                     </li>
@@ -224,9 +224,12 @@
     <footer class="footer">
         <div class="container footer-bar">
             <div class="contacts-box-footer">
+    
                 <a href="" class="logo link">
-                    <span class="logo__text logo__text--accent">Web</span><span class="logo__text logo__text--white">Studio</span>
+                    <span class="logo__text logo__text--accent">Web</span><span
+                        class="logo__text logo__text--white">Studio</span>
                 </a>
+    
                 <address>
                     <ul class="contacts-footer list">
                         <li class="item">
@@ -243,47 +246,50 @@
                     </ul>
                 </address>
             </div>
-            <div class="social-links-footer">
-                <p class="social-links-title list">Приєднуйтесь</p>
-                <ul class="social-links-list list">
-                    <li class="social-item">
-                        <a href="" class="social-link link">
-                            <svg width="20px" height="20px">
-                                <use href="./images/icons.svg#instagram" class="social-icon"></use>
+    
+            <div class="footer-social-links">
+                <p class="social__title list">Приєднуйтесь</p>
+    
+                <ul class="social social--indent list">
+                    <li class="social__item">
+                        <a href="" class="social__link social__link--reverse link">
+                            <svg width="20px" height="20px" class="social__icon social__icon--reverse">
+                                <use href="./images/icons.svg#instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-item">
-                        <a href="" class="social-link link">
-                            <svg width="20px" height="20px">
-                                <use href="./images/icons.svg#twitter" class="social-icon"></use>
+                    <li class="social__item">
+                        <a href="" class="social__link social__link--reverse link">
+                            <svg width="20px" height="20px" class="social__icon social__icon--reverse">
+                                <use href="./images/icons.svg#twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-item">
-                        <a href="" class="social-link link">
-                            <svg width="20px" height="20px">
-                                <use href="./images/icons.svg#facebook" class="social-icon"></use>
+                    <li class="social__item">
+                        <a href="" class="social__link social__link--reverse link">
+                            <svg width="20px" height="20px" class="social__icon social__icon--reverse">
+                                <use href="./images/icons.svg#facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-item">
-                        <a href="" class="social-link link">
-                            <svg width="20px" height="20px">
-                                <use href="./images/icons.svg#linkedin" class="social-icon"></use>
+                    <li class="social__item">
+                        <a href="" class="social__link social__link--reverse link">
+                            <svg width="20px" height="20px" class="social__icon social__icon--reverse">
+                                <use href="./images/icons.svg#linkedin"></use>
                             </svg>
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="subscription">
-                <p class="subscription-title list">Підпишіться на розсилку</p>
-                <form name="subscription-form" class="subscription-form">
     
-                    <div class="subscription-field">
+            <div class="subscription">
+                <p class="subscription__title list">Підпишіться на розсилку</p>
+                <form name="subscription-form">
+    
+                    <div class="subscription__input-box">
                         <input type="email" name="email" id="subscription-email" placeholder="E-mail"
-                            class="subscription-input" required>
-                        <button type="submit" class="subscription-button">
+                            class="subscription__input" required>
+                        <button type="submit" class="subscription__button">
                             Підписатися
                         </button>
                     </div>
