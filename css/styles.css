@@ -893,7 +893,7 @@ address {
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.card-set .title {
+.card-set__title {
     margin-bottom: 4px;
 
     color: var(--primary-text-color);
@@ -901,12 +901,12 @@ address {
     font-size: 18px;
     line-height: 2.0;
 }
-.card-set .description {
+.card-set__description {
     color: var(--description-text-color);
     font-size: 16px;
     line-height: 1.9;
 }
-.portfolio-card {
+.card-set__meta {
     padding: 20px 24px;
    
     border-right: 1px solid var(--portfolio-card-border-color);
@@ -922,7 +922,7 @@ address {
     overflow: hidden;    
 }
 
-.card-set__photo .text-overlay {
+.text-overlay {
     position: absolute;
     left: 0;
     top:0;
