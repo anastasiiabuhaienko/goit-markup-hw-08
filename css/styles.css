@@ -70,13 +70,13 @@ img {
     font-size: 26px;
     line-height: 1.19;
 }
-.logo .logo-accent {
+.logo__text--accent {
     color: var(--accent-color);
 }
-.logo .logo-black {
+.logo__text--black {
     color: var(--black-color);
 }
-.logo .logo-white {
+.logo__text--white {
     color: var(--white-color);
 }
 
@@ -94,10 +94,10 @@ img {
 header {
     border-bottom: 1px solid var(--line-color);
 }
-.header-elements {
+.header {
     display: flex;
 }
-.nav-elements, 
+.site-nav, 
 .contacts {
     align-items: center;
 }
@@ -109,10 +109,10 @@ header {
     display: flex;
     margin-left: auto;
 }
-.contacts .item + .item {
-    margin-left: 50px;
+.contacts__item:not(:last-child) {
+    margin-right: 50px;
 }
-.contacts .link {
+.contacts__link {
     display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -138,25 +138,21 @@ header {
      /* Параметры шрифта унаследовали выше */
     color: var(--white-color);
 }
-.contacts .link:hover,
-.contacts .link:focus,
+.contacts__link:hover,
+.contacts__link:focus,
 .contacts-footer .link:hover,
 .contacts-footer .link:focus{
     color: var(--accent-color);
 }
-.contacts .mail-link-icon,
-.contacts .phone-link-icon
- {
+.contacts__icon {
     margin-right: 10px;
 
     fill: var(--description-text-color);
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts .mail-link:hover .mail-link-icon,
-.contacts .mail-link:focus .mail-link-icon,
-.contacts .phone-link:hover .phone-link-icon,
-.contacts .phone-link:focus .phone-link-icon {
+.contacts__link:hover .contacts__icon,
+.contacts__link:focus .contacts__icon {
     fill: var(--accent-color);
 }
 
@@ -165,12 +161,14 @@ header {
 
 
 /* NAVIGATION */
-
+.site-nav {
+    display: flex;
+}
 .nav-list {
     display: flex;
     margin-left: 93px;
 }
-.current::after {
+.nav-list__link--current::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -182,13 +180,10 @@ header {
     background-color: var(--accent-color);
     border-radius: 2px;
 }
-.nav-list .item + .item {
-    margin-left: 50px;
+.nav-list__item:not(:last-child) {
+    margin-right: 50px;
 }
-.nav-elements {
-    display: flex;
-}
-.nav-list .link{
+.nav-list__link{
     position: relative;
     color: var(--primary-text-color);
     font-weight: 500;
@@ -200,11 +195,11 @@ header {
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-list .link.current {
+.nav-list__link--current {
     color: var(--accent-color);
 }
-.nav-list .link:hover,
-.nav-list .link:focus {
+.nav-list__link:hover,
+.nav-list__link:focus {
     color: var(--accent-color);
 }
 
