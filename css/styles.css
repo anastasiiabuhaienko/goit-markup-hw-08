@@ -501,25 +501,25 @@ header {
 .features {
     padding: var(--specific-indent);
 }
-.features-list {
+.features__list {
     display: flex;
 }
-.features .item {
+.features__item {
     width: 270px;
     margin-right: 30px;
     margin-bottom: 0;
 }
-.features-list .item:last-child {
+.features__item:last-child {
     margin-right: 0;
 }
-.features-list .title {
+.features__title {
     margin-bottom: 10px;
     
     text-transform: uppercase;
     font-size: 14px;
     line-height: 1.14;
 }
-.features-list .description {
+.features__description {
     color: var(--description-text-color);
     font-size: 14px;
     line-height: 1.7;
@@ -680,14 +680,14 @@ header {
 
 
 /* CLIENTS */
-.clients {
+.client {
     padding: var(--specific-indent);
 }
 
-.clients-list {
+.client__list {
     display: flex;
 }
-.clients .clients-link {
+.client__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -700,24 +700,24 @@ header {
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients .item {
+.client__item {
     margin-right: 30px;
     margin-bottom: 0;
 }
-.clients .item:last-child {
+.client__item:last-child {
     margin-right: 0;
 }
-.clients .client-logo {
+.client__logo {
     fill: var(--clients-element-color);
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients .clients-link:hover,
-.clients .clients-link:focus {
+.client__link:hover,
+.client__link:focus {
     border: 1px solid var(--accent-color);
 }
-.clients .clients-link:hover .client-logo,
-.clients .clients-link:focus .client-logo {
+.client__link:hover .client__logo,
+.client__link:focus .client__logo {
     fill: var(--accent-color);
 }
 
