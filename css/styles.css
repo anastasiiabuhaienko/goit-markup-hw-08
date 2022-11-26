@@ -58,7 +58,7 @@ img {
 
 
 /* SECTION COMMON STYLES */
-.section .section-title {
+.section-title {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -126,7 +126,7 @@ header {
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts-footer .link {
+.contacts-footer__link {
     color: var(--white-color-alpha);
     font-style: normal;
     font-size: 14px;
@@ -134,14 +134,14 @@ header {
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts-footer .geolocation {
+.contacts-footer__link--geolocation {
      /* Параметры шрифта унаследовали выше */
     color: var(--white-color);
 }
 .contacts__link:hover,
 .contacts__link:focus,
-.contacts-footer .link:hover,
-.contacts-footer .link:focus{
+.contacts-footer__link:hover,
+.contacts-footer__link:focus{
     color: var(--accent-color);
 }
 .contacts__icon {
@@ -213,7 +213,7 @@ header {
     letter-spacing: 0.06em;
     text-align: center;   
 }
-.hero .hero-title {
+.hero__title {
     margin-bottom: 30px;
 
     color: var(--white-color);
@@ -223,7 +223,7 @@ header {
     line-height: 1.36;
 }
 /* HERO MODAL AND BACKDROP */
-.hero.overlay {
+.hero--overlay {
     height: 600px;
     max-width: 1600px;
     
@@ -239,7 +239,7 @@ header {
     background-size: cover;
     background-position: center;
 }
-.hero .backdrop {
+.backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -253,7 +253,7 @@ header {
     opacity: 1;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero .modal {
+.modal {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -270,7 +270,7 @@ header {
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0.9);
 }
-.modal .modal-button {
+.modal-button {
     position: absolute;
     top:0;
     right: 0;
@@ -308,7 +308,7 @@ header {
     height: 100%;
     width: 100%;
 }
-.modal-form-title {
+.modal-form__title {
     margin-bottom: 12px;
 
     font-weight: 700;
@@ -318,7 +318,7 @@ header {
     letter-spacing: 0.03em;
 }
 /* Общее в стилях input */
-.modal-input {
+.modal-form__input {
     width: 100%;
     
     border-radius: 4px;
@@ -327,27 +327,27 @@ header {
     transition:
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-cell {
+.modal-form__input--indent {
     padding: 12px 12px 12px 42px;
     height: 40px;
 
     outline: none;
 }
-.modal-cell-textarea {
+.modal-form__input--textarea-indent {
     resize: none;
     padding: 12px 16px;
     margin-bottom: 20px;
 
     outline: none;
 }
-.modal-input::placeholder {
+.modal-form__input:placeholder {
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
         
     color: rgba(117, 117, 117, 0.5);
 }
-.modal-label{
+.modal-form__label {
     display: inline-block;
     margin-bottom: 4px;
     width: 100%;
@@ -358,11 +358,11 @@ header {
     letter-spacing: 0.01em;
     color: var(--description-text-color);
 }
-.modal .input-wrapper {
+.modal-form__input-wrapper {
     position: relative;
     margin-bottom: 10px;
 }
-.modal .input-icon {
+.modal-form__input-icon {
     position: absolute;
     width:18px;
     height: 18px;
@@ -373,25 +373,25 @@ header {
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-input:focus + .input-icon,
-.modal-input:hover + .input-icon {
+.modal-form__input:focus + .modal-form__input-icon,
+.modal-form__input:hover + .modal-form__input-icon {
     fill: var(--accent-color);
 }
-.modal-input:focus,
-.modal-input:hover {
+.modal-form__input:focus,
+.modal-form__input:hover {
     border-color: var(--accent-color);
 }
 /* Скрываем родной checkbox */
-.modal .checkbox-hidden {
+.checkbox-accept--hidden {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     position: absolute;
 }
-.modal .input-checkbox {
+.checkbox-accept {
     margin:0;
 }
-.modal .checkbox-accept {
+.checkbox-accept__label {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -401,7 +401,7 @@ header {
     letter-spacing: 0.03em;
     color: var(--description-text-color);
 }
-.modal .icon-wrapper {
+.checkbox-accept__icon-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -412,20 +412,20 @@ header {
     margin-right: 8px;
     cursor: pointer;
 }
-.checkbox-accept .accept-icon {
+.checkbox-accept__icon {
     fill: transparent;
 }
-.modal .input-checkbox input:checked + .checkbox-accept .icon-wrapper {
+.checkbox-accept input:checked + .checkbox-accept__label .checkbox-accept__icon-wrapper {
     background-color: var(--accent-color);
     border: none;
 }
-.modal .input-checkbox input:checked + .checkbox-accept .accept-icon {
+.checkbox-accept input:checked + .checkbox-accept__label .checkbox-accept__icon {
     fill: var(--white-color);
 }
-.modal .checkbox-link {
+.checkbox-accept__link {
     color: var(--accent-color);
 }
-.modal .button.feedback-form-button {
+.button--form-indent {
     margin-top: 30px;
     padding: 10px 52px;
 }
@@ -447,7 +447,7 @@ header {
 }
 
 /* HERO BUTTON */
-.hero .button {
+.hero__button {
     padding: 10px 32px;
 
     color: var(--white-color);
@@ -616,7 +616,7 @@ header {
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.team__list .title {
+.team__title {
     margin-bottom: 10px;
 
     color: var(--primary-text-color);
@@ -625,7 +625,7 @@ header {
     line-height: 1.19;
     text-align: center;
 }
-.team__list .description {
+.team__description {
     color: var(--description-text-color);
     font-size: 16px;
     line-height: 1.19;
@@ -736,10 +736,10 @@ footer {
 address {
     margin-top: 20px;
 }
-.footer .item {
+.contacts-footer__item {
     margin-bottom: 9px;
 }
-.footer .item:last-child {
+.contacts-footer__item:last-child {
     margin-bottom: 0;
 }
 .social__link--reverse {
@@ -751,8 +751,8 @@ address {
 .social__icon--reverse {
     fill: var(--white-color);
 }
-.social__title,
-.subscription__title{
+.social-footer__title,
+.subscription__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -763,7 +763,7 @@ address {
     display: flex;
     align-items: baseline;
 }
-.footer .contacts-box-footer {
+.contacts-box {
     margin-right:  70px;
 }
 .social--indent {
@@ -922,7 +922,7 @@ address {
     overflow: hidden;    
 }
 
-.text-overlay {
+.card-set__text-overlay {
     position: absolute;
     left: 0;
     top:0;
@@ -941,7 +941,7 @@ address {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card-set__item:hover .text-overlay{
+.card-set__item:hover .card-set__text-overlay{
 
     transform: translateY(0);
 }

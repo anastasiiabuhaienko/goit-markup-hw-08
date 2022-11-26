@@ -62,10 +62,10 @@
   
     <main>
             <!--HERO-->
-            <section class="hero overlay">
+            <section class="hero hero--overlay">
                 <div class="container">
-                    <h1 class="hero-title list">Ефективні рішення для <br> вашого бізнесу</h1>
-                    <button type="button" class="button" data-modal-open>Замовити послугу</button>
+                    <h1 class="hero__title list">Ефективні рішення для <br> вашого бізнесу</h1>
+                    <button type="button" class="hero__button button" data-modal-open>Замовити послугу</button>
                     
                     <div class="backdrop is-hidden" data-modal>
                         <div class="modal">
@@ -78,77 +78,77 @@
 
                             <!-- FEEDBACK FORM -->
                             <form name="feedback-form" class="modal-form">
-                                <p class="modal-form-title list">Залиште свої дані, ми вам передзвонимо</p>
+                                <p class="modal-form__title list">Залиште свої дані, ми вам передзвонимо</p>
 
-                                <label for="user-name" class="modal-label">Ім'я</label>
-                                <div class="input-wrapper">
+                                <label for="user-name" class="modal-form__label">Ім'я</label>
+                                <div class="modal-form__input-wrapper">
                                     <input 
                                         name="user-name" 
                                         id="user-name" 
                                         type="text" 
-                                        class="modal-input modal-cell"
+                                        class="modal-form__input modal-form__input--indent"
                                     >
-                                    <svg width="18" height="18" class="input-icon">
+                                    <svg width="18" height="18" class="modal-form__input-icon">
                                         <use href="./images/icons.svg#modal-person"></use>
                                     </svg>
                                 </div>
                                 
 
-                                <label for="user-phone" class="modal-label">Телефон</label>
-                                <div class="input-wrapper">
+                                <label for="user-phone" class="modal-form__label">Телефон</label>
+                                <div class="modal-form__input-wrapper">
                                     <input 
                                         name="user-phone" 
                                         id="user-phone" 
                                         type="tel" 
-                                        class="modal-input modal-cell" 
+                                        class="modal-form__input modal-form__input--indent" 
                                         required
                                     >
-                                    <svg width="18" height="18" class="input-icon">
+                                    <svg width="18" height="18" class="modal-form__input-icon">
                                         <use href="./images/icons.svg#modal-phone"></use>
                                     </svg>
                                 </div>
                                 
-                                <label for="user-email" class="modal-label">Пошта</label>
-                                <div class="input-wrapper">
+                                <label for="user-email" class="modal-form__label">Пошта</label>
+                                <div class="modal-form__input-wrapper">
                                     <input 
                                         name="user-email" 
                                         id="user-email" 
                                         type="email" 
-                                        class="modal-input modal-cell"
+                                        class="modal-form__input modal-form__input--indent"
                                     >
-                                    <svg width="18" height="18" class="input-icon">
+                                    <svg width="18" height="18" class="modal-form__input-icon">
                                         <use href="./images/icons.svg#modal-email"></use>
                                     </svg>
                                 </div>
                                 
                                 
-                                <label for="user-comment" class="modal-label">Коментар</label>
+                                <label for="user-comment" class="modal-form__label">Коментар</label>
                                 <textarea 
                                     name="user-comment" 
                                     id="user-comment"
                                     rows="5" 
                                     placeholder="Введіть текст" 
-                                    class="modal-input modal-cell-textarea"></textarea>
+                                    class="modal-form__input modal-form__input--textarea-indent"></textarea>
                                 
-                                <div class="input-wrapper input-checkbox">
+                                <div class="checkbox-accept">
                                     <input 
                                         name="checkbox-accept" 
                                         id="checkbox-accept" 
                                         type="checkbox" 
                                         value="agree"
-                                        class="checkbox-hidden"
+                                        class="checkbox-accept--hidden"
                                     >
-                                    <label for="checkbox-accept" class="checkbox-accept">
-                                        <span class="icon-wrapper">
-                                            <svg width="16" height="15" class="accept-icon">
+                                    <label for="checkbox-accept" class="checkbox-accept__label">
+                                        <span class="checkbox-accept__icon-wrapper">
+                                            <svg width="16" height="15" class="checkbox-accept__icon">
                                                 <use href="./images/icons.svg#icon-check"></use>
                                             </svg>
                                         </span>
-                                        Погоджуюся з розсилкою та приймаю&nbsp;<a href="" class="checkbox-link link">Умови договору</a>
+                                        Погоджуюся з розсилкою та приймаю&nbsp;<a href="" class="checkbox-accept__link link">Умови договору</a>
                                     </label>
                                 </div>
 
-                                <button type="submit" class="button feedback-form-button">Відправити</button>
+                                <button type="submit" class="button button--form-indent">Відправити</button>
                             </form>
 
                         </div>
@@ -253,8 +253,8 @@
                             </div>
 
                             <div class="team__meta">
-                                <h3 class="title list">Ігор Дем'яненко</h3>
-                                <p class="description list">Product Designer</p>
+                                <h3 class="team__title list">Ігор Дем'яненко</h3>
+                                <p class="team_description list">Product Designer</p>
                                 
                                 <ul class="social list">
                                     <li class="social__item">
@@ -299,8 +299,8 @@
                             </div>
 
                             <div class="team__meta">
-                                <h3 class="title list">Ольга Рєпіна</h3>
-                                <p class="description list">Frontend Developer</p>
+                                <h3 class="team__title list">Ольга Рєпіна</h3>
+                                <p class="team__description list">Frontend Developer</p>
                                 
                                 <ul class="social list">
                                     <li class="social__item">
@@ -346,8 +346,8 @@
                             </div>
 
                             <div class="team__meta">
-                                <h3 class="title list">Микола Тарасов</h3>
-                                <p class="description list">Marketing</p>
+                                <h3 class="team__title list">Микола Тарасов</h3>
+                                <p class="team__description list">Marketing</p>
 
                                 <ul class="social list">
                                     <li class="social__item">
@@ -392,8 +392,8 @@
                             </div>
 
                             <div class="team__meta">
-                                <h3 class="title list">Михайло Єрмаков</h3>
-                                <p class="description list">UI Designer</p>
+                                <h3 class="team__title list">Михайло Єрмаков</h3>
+                                <p class="team__description list">UI Designer</p>
 
                                 <ul class="social list">
                                     <li class="social__item">
@@ -497,7 +497,7 @@
     <!--FOOTER-->
     <footer class="footer">
         <div class="container footer-bar">
-            <div class="contacts-box-footer">
+            <div class="contacts-box">
 
                 <a href="" class="logo link">
                     <span class="logo__text logo__text--accent">Web</span><span class="logo__text logo__text--white">Studio</span>
@@ -505,22 +505,22 @@
 
                 <address>
                     <ul class="contacts-footer list">
-                        <li class="item">
+                        <li class="contacts-footer__item">
                             <a href="https://goo.gl/maps/DaRz6EYafsqUge2N6" target="_blank" rel="noopener noreferrer nofollow"
-                                class="link geolocation">м. Київ, пр-т Лесі Українки, 26</a>
+                                class="contacts-footer__link contacts-footer__link--geolocation link">м. Київ, пр-т Лесі Українки, 26</a>
                         </li>
-                        <li class="item">
-                            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+                        <li class="contacts-footer__item">
+                            <a href="mailto:info@devstudio.com" class="contacts-footer__link link">info@devstudio.com</a>
                         </li>
-                        <li class="item">
-                            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+                        <li class="contacts-footer__item">
+                            <a href="tel:+380961111111" class="contacts-footer__link link">+38 096 111 11 11</a>
                         </li>
                     </ul>
                 </address>
             </div>
 
-            <div class="footer-social-links">
-                <p class="social__title list">Приєднуйтесь</p>
+            <div class="social-footer">
+                <p class="social-footer__title list">Приєднуйтесь</p>
 
                 <ul class="social social--indent list">
                     <li class="social__item">
