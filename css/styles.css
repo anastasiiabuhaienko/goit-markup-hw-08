@@ -2,7 +2,7 @@
     --primary-text-color: #212121;
     --description-text-color: #757575;
     --accent-color: #2196F3;
-    --active-color-button: #188CE8;
+    --accent-button-color: #188CE8;
     --primary-bg-color: #F5F4FA;
     --accent-bg-color: #2F303A;
     --hero-gradient: rgba(47, 48, 58, 0.4);
@@ -10,10 +10,34 @@
     --white-color-alpha:rgba(255, 255, 255, 0.6);
     --black-color: #000000;
     --line-color:#ECECEC;
-    --portfolio-card-border-color:#EEEEEE;
-    --bg-hero-color: #C4C4C4;
-    --clients-element-color: #AFB1B8;
+    --card-set-border-color:#EEEEEE;
+    --hero-bg-color: #C4C4C4;
+    --primary-icon-color: #AFB1B8;
     --backdrop-color: rgba(0, 0, 0, 0.2);
+    --primary-box-shadow-color:rgba(0, 0, 0, 0.15);
+
+    --first-modal-box-shadow-color: rgba(0, 0, 0, 0.12);
+    --second-modal-box-shadow-color: rgba(0, 0, 0, 0.14);
+    --third-modal-box-shadow-color: rgba(0, 0, 0, 0.2);
+
+    --first-team-card-box-shadow-color: rgba(0, 0, 0, 0.12);
+    --second-team-card-box-shadow-color: rgba(0, 0, 0, 0.14);
+    --third-team-card-box-shadow-color: rgba(0, 0, 0, 0.2);
+
+    --first-filter-box-shadow-color: rgba(0, 0, 0, 0.1);
+    --second-filter-box-shadow-color: rgba(0, 0, 0, 0.08);
+    --third-filter-box-shadow-color: rgba(0, 0, 0, 0.12);
+
+    --card-title-bg-color: rgba(47, 48, 58, 0.8);
+    --overlay-bg-color: rgba(33, 150, 243, 0.9);
+
+    --input-bg-color: rgba(255, 255, 255, 0);
+    --input-border-color: rgba(255, 255, 255, 0.3);
+    --input-placeholder-color: rgba(117, 117, 117, 0.5);
+    
+    --input-primary-border-color: rgba(33, 33, 33, 0.2);
+    --input-primary-placeholder-color: rgba(255, 255, 255, 0.6);
+
 
     --specific-indent: 94px 0;
 }
@@ -209,7 +233,7 @@ header {
     padding-top: 200px;
     padding-bottom: 200px;
 
-    background-color: var(--bg-hero-color);
+    background-color: var(--hero-bg-color);
     letter-spacing: 0.06em;
     text-align: center;   
 }
@@ -261,7 +285,10 @@ header {
     width: 528px;
 
     background: var(--white-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 
+    0px 1px 3px var(--first-modal-box-shadow-color), 
+    0px 1px 1px var(--second-modal-box-shadow-color), 
+    0px 2px 1px var(--third-modal-box-shadow-color);
     border-radius: 4px;   
 
     transform: translate(-50%, -50%) scale(1) rotateY(360deg);
@@ -322,7 +349,7 @@ header {
     width: 100%;
     
     border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: 1px solid var(--input-primary-border-color);
 
     transition:
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -345,7 +372,7 @@ header {
     line-height: 1.16;
     letter-spacing: 0.01em;
         
-    color: rgba(117, 117, 117, 0.5);
+    color: var(--input-placeholder-color);
 }
 .modal-form__label {
     display: inline-block;
@@ -437,8 +464,8 @@ header {
     letter-spacing: 0.06em;
     
     color: var(--white-color);
-    background: var(--active-color-button);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background: var(--accent-button-color);
+    box-shadow: 0px 4px 4px var(--primary-box-shadow-color);
     border-radius: 4px;
 
     transition:
@@ -482,8 +509,8 @@ header {
 }
 .hero .button:hover,
 .hero .button:focus {
-    background-color: var(--active-color-button);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--accent-button-color);
+    box-shadow: 0px 4px 4px var(--primary-box-shadow-color);
 }
 
 /* FILTERS BUTTON */
@@ -506,9 +533,9 @@ header {
     color: var(--white-color);
     background-color: var(--accent-color);
     box-shadow: 
-    0px 3px 1px rgba(0, 0, 0, 0.1), 
-    0px 1px 2px rgba(0, 0, 0, 0.08), 
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+    0px 3px 1px var(--first-filter-box-shadow-color), 
+    0px 1px 2px var(--second-filter-box-shadow-color), 
+    0px 2px 2px var(--third-filter-box-shadow-color);
 }
 
 
@@ -597,7 +624,7 @@ header {
     height: 70px;
 
 
-    background-color: rgba(47, 48, 58, 0.8);
+    background-color: var(--card-title-bg-color);
 }
 
 /* TEAM */
@@ -620,9 +647,9 @@ header {
     background-color: var(--white-color);
 
     box-shadow: 
-        0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
+        0px 1px 3px var(--first-team-card-box-shadow-color),
+        0px 1px 1px var(--second-team-card-box-shadow-color),
+        0px 2px 1px var(--third-team-card-box-shadow-color);
     border-radius: 0px 0px 4px 4px;
 }
 .team__item:last-child {
@@ -656,7 +683,7 @@ header {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social__icon {
-    fill: var(--clients-element-color);
+    fill: var(--primary-icon-color);
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -712,7 +739,7 @@ header {
     width: 170px;
     height: 92px;
     
-    border: 1px solid var(--clients-element-color);
+    border: 1px solid var(--primary-icon-color);
     border-radius: 4px;
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -725,7 +752,7 @@ header {
     margin-right: 0;
 }
 .client__logo {
-    fill: var(--clients-element-color);
+    fill: var(--primary-icon-color);
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -806,16 +833,16 @@ address {
     padding: 15px 16px;
 
     color: var(--white-color);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid var(--input-border-color);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: var(--input-bg-color);
     outline: 0;
 }
 .subscription__input::placeholder {
     font-size: 16px;
     line-height: 1.25;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--input-primary-placeholder-color);
 }
 
 .subscription__button {
@@ -844,8 +871,8 @@ address {
 }
 .subscription__button:focus,
 .subscription__button:hover {
-    background-color: var(--active-color-button);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--accent-button-color);
+    box-shadow: 0px 4px 4px var(primary-box-shadow-color);
 }
 .subscription__button::after {
     content: "";
@@ -905,9 +932,9 @@ address {
 .card-set__link:hover,
 .card-set__link:focus {
     box-shadow:
-        0px 1px 1px rgba(0, 0, 0, 0.12),
-        0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
+        0px 1px 1px var(--first-card-set-box-shadow-color),
+        0px 4px 4px var(--second-card-set-box-shadow-color),
+        1px 4px 6px var(--third-card-set-box-shadow-color);
 }
 .card-set__title {
     margin-bottom: 4px;
@@ -925,9 +952,9 @@ address {
 .card-set__meta {
     padding: 20px 24px;
    
-    border-right: 1px solid var(--portfolio-card-border-color);
-    border-bottom: 1px solid var(--portfolio-card-border-color);
-    border-left: 1px solid var(--portfolio-card-border-color);;
+    border-right: 1px solid var(--card-set-border-color);
+    border-bottom: 1px solid var(--card-set-border-color);
+    border-left: 1px solid var(--card-set-border-color);;
 }
 
 /* на случай если не будет загружена картинка добавлен блок с фиксированной шириной */
@@ -951,7 +978,7 @@ address {
     line-height: 1.55;
 
     color: var(--white-color);
-    background-color: rgba(33, 150, 243, 0.9);
+    background-color: var(--overlay-bg-color);
 
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
