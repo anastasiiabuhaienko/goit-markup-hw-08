@@ -8,14 +8,22 @@ footer {
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
+
+    &-bar {
+        display: flex;
+        align-items: baseline;
+    }
 }
 
 address {
     margin-top: 20px;
 }
 
-.footer-bar {
-    display: flex;
-    align-items: baseline;
-}
 
+.social-footer__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--white-color);
+}

@@ -1,72 +1,69 @@
 // SOCIAL ICON COMMON SETTINGS
 
-
-.social__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-}
-
 .social {
     display: flex;
     justify-content: center;
 
     margin-top: 16px;
+
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+
+        background-color: var(--white-color);
+
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+        &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        &:hover .social__icon,
+        &:focus .social__icon {
+            fill: var(--white-color);
+
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+            //SOCIAL LINK DARK FOR FOOTER
+        &--reverse {
+            background-color: var(--social-reverse-color);
+
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 10px;
+    }
+
+
+    &__icon {
+        fill: var(--primary-icon-color);
+
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+        //ICON REVERSE FOR FOOTER
+        &--reverse {
+                fill: var(--white-color);
+        }
+    }
+
+    &--indent {
+        margin-top: 20px;
+    }
+
+
 }
 
-.social__item:not(:last-child) {
-    margin-right: 10px;
-}
 
-.social__link {
-    background-color: var(--white-color);
-
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social__icon {
-    fill: var(--primary-icon-color);
-
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social__link:hover,
-.social__link:focus {
-    background-color: var(--accent-color);
-
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social__link:hover .social__icon,
-.social__link:focus .social__icon {
-    fill: var(--white-color);
-
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-//SOCIAL FOOTER
-
-.social__link--reverse {
-    background-color: var(--social-reverse-color);
-
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social__icon--reverse {
-    fill: var(--white-color);
-}
-
-.social--indent {
-    margin-top: 20px;
-}
-
-.social-footer__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-    color: var(--white-color);
-}
