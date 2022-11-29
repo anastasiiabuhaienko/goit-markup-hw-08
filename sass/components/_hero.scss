@@ -7,63 +7,72 @@
     background-color: var(--hero-bg-color);
     letter-spacing: 0.06em;
     text-align: center;
-}
 
-.hero__title {
-    margin-bottom: 30px;
+    &__title {
+        margin-bottom: 30px;
 
-    color: var(--white-color);
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-}
+        color: var(--white-color);
+
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        }
 
 // HERO BUTTON
 
+    &__button {
+        padding: 10px 32px;
+        cursor: pointer;
 
-.hero__button {
-    padding: 10px 32px;
-    cursor: pointer;
+        color: var(--white-color);
+        background-color: var(--accent-color);
+        box-shadow: 0px 4px 4px var(--primary-box-shadow-color);
+        border: none;
+        border-radius: 4px;
 
-    color: var(--white-color);
-    background-color: var(--accent-color);
-    box-shadow: 0px 4px 4px var(--primary-box-shadow-color);
-    border: none;
-    border-radius: 4px;
 
-    
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.06em;
-    
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.9;
+        letter-spacing: 0.06em;
 
-    transition:
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        transition:
+            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+
+
+    .button:hover,
+    .button:focus {
+        background-color: var(--accent-button-color);
+        box-shadow: 0px 4px 4px var(--primary-box-shadow-color);
+    }
+
+//HERO OVERLAY
+
+    &--overlay {
+        height: 600px;
+        max-width: 1600px;
+
+        margin-left: auto;
+        margin-right: auto;
+        background-image: linear-gradient(to left,
+                var(--hero-gradient),
+                var(--hero-gradient)),
+            url("../images/hero.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
 }
 
 
 
-.hero .button:hover,
-.hero .button:focus {
-    background-color: var(--accent-button-color);
-    box-shadow: 0px 4px 4px var(--primary-box-shadow-color);
-}
 
 
-.hero--overlay {
-    height: 600px;
-    max-width: 1600px;
 
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(to left,
-            var(--hero-gradient),
-            var(--hero-gradient)),
-        url("../images/hero.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
+
