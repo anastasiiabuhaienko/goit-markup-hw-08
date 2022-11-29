@@ -1,0 +1,44 @@
+body {
+    background-color: var(--white-color);
+    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+// RESET STYLES
+
+.link {
+    text-decoration: none;
+}
+
+// Скидывание родных отступов у h, ul, p 
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+// Избавляемся от родного отступа у картинки 
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+// SECTION COMMON STYLES 
+.section-title {
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+// CONTAINER 
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}

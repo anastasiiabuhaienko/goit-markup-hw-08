@@ -1,0 +1,12 @@
+header {
+    border-bottom: 1px solid var(--line-color);
+}
+
+.header-bar {
+    display: flex;
+}
+
+.site-nav,
+.contacts {
+    align-items: center;
+}
