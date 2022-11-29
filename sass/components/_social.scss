@@ -27,13 +27,6 @@
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    &:hover .social__icon,
-    &:focus .social__icon {
-        fill: var(--white-color);
-
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
     //SOCIAL LINK DARK FOR FOOTER
     &--reverse {
         background-color: var(--social-reverse-color);
@@ -46,11 +39,17 @@
     margin-right: 10px;
 }
 
-
 .social__icon {
     fill: var(--primary-icon-color);
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .social__link:hover &,
+    .social__link:focus & {
+        fill: var(--white-color);
+        
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
 
     //ICON REVERSE FOR FOOTER

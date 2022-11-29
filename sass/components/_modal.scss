@@ -14,12 +14,7 @@
 
     opacity: 1;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
-    &.is-hidden .modal {
-        transform: translate(-50%, -50%) scale(0.9);
-    }
-        
+      
         
     &.is-hidden {
         opacity: 0;
@@ -46,6 +41,11 @@
 
     transform: translate(-50%, -50%) scale(1) rotateY(360deg);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    .backdrop.is-hidden & {
+        transform: translate(-50%, -50%) scale(0.9);
+    }
 }
 
     //MODAL BUTTON  
@@ -136,12 +136,6 @@
         color: var(--input-placeholder-color);
     }
 
-
-    &:focus + &-icon,
-    &:hover + &-icon {
-        fill: var(--accent-color);
-    }
-    
     &:focus,
     &:hover {
         border-color: var(--accent-color);
@@ -164,8 +158,14 @@
     fill: var(--primary-text-color);
     
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    .modal-form__input:focus + &,
+    .modal-form__input:hover + & {
+        fill: var(--accent-color);
+    }
 }
-        
+
 
 
 .modal-form__label {
@@ -226,16 +226,8 @@
         -moz-appearance: none;
         appearance: none;
         position: absolute;
-    }
+    }  
 
-    & input:checked + &__label &__icon-wrapper {
-        background-color: var(--accent-color);
-        border: none;
-    }
-    
-    & input:checked + &__label &__icon {
-        fill: var(--white-color);
-    }
 }
 
 .checkbox-accept__label {
@@ -255,6 +247,10 @@
 
 .checkbox-accept__icon {
     fill: transparent;
+
+    .checkbox-accept input:checked + .checkbox-accept__label & {
+        fill: var(--white-color);
+    }
 }
 
 .checkbox-accept__icon-wrapper {
@@ -267,4 +263,9 @@
     border-radius: 2px;
     margin-right: 8px;
     cursor: pointer;
+
+    .checkbox-accept input:checked+.checkbox-accept__label & {
+        background-color: var(--accent-color);
+        border: none;
+    }
 }
