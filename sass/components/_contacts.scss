@@ -1,4 +1,4 @@
-// CONTACTS
+// CONTACTS 
 
 .contacts {
     display: flex;
@@ -55,4 +55,18 @@
 .contacts__link:hover .contacts__icon,
 .contacts__link:focus .contacts__icon {
     fill: var(--accent-color);
+}
+
+// CONTACTS FOOTER
+
+.contacts-box {
+    margin-right: 70px;
+}
+
+.contacts-footer__item {
+    margin-bottom: 9px;
+}
+
+.contacts-footer__item:last-child {
+    margin-bottom: 0;
 }

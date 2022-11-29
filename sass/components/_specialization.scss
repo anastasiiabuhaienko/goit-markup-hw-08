@@ -1,0 +1,53 @@
+// SPECIALIZATION
+
+
+.specialization {
+    padding-bottom: 94px;
+}
+
+.specialization__list {
+    display: flex;
+    margin-top: 50px;
+}
+
+.specialization__item {
+    position: relative;
+
+    margin-right: 30px;
+    margin-bottom: 0;
+}
+
+.specialization__item:last-child {
+    margin-right: 0;
+}
+
+/* на случай если не загрузилась картинка */
+.specialization__photo {
+    width: 370px;
+}
+
+.specialization__title-text {
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+.specialization__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 70px;
+
+
+    background-color: var(--card-title-bg-color);
+}
