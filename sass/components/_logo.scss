@@ -5,18 +5,17 @@
     font-family: Raleway, sans-serif;
     font-size: 26px;
     line-height: 1.19;
+}
 
-    &__text--accent {
-        color: var(--accent-color);
-    }
+.logo__text--accent {
+    color: var(--accent-color);
+}
     
-    &__text--black {
-        color: var(--black-color);
-    }
+.logo__text--black {
+    color: var(--black-color);
+}
     
-    &__text--white {
-        color: var(--white-color);
-    }
-
+.logo__text--white {
+    color: var(--white-color);
 }
 
