@@ -4,7 +4,7 @@
     padding-top: 200px;
     padding-bottom: 200px;
 
-    background-color: var(--hero-bg-color);
+    background-color: $hero-bg-color;
     letter-spacing: 0.06em;
     text-align: center;
 
@@ -18,8 +18,8 @@
         margin-left: auto;
         margin-right: auto;
         background-image: linear-gradient(to left,
-                var(--hero-gradient),
-                var(--hero-gradient)),
+                $hero-gradient,
+                $hero-gradient),
             url("../images/hero.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -30,7 +30,7 @@
 .hero__title {
     margin-bottom: 30px;
 
-    color: var(--white-color);
+    color: $white-color;
 
     text-transform: uppercase;
     font-weight: 900;
@@ -44,9 +44,9 @@
     padding: 10px 32px;
     cursor: pointer;
 
-    color: var(--white-color);
-    background-color: var(--accent-color);
-    box-shadow: 0px 4px 4px var(--primary-box-shadow-color);
+    color: $white-color;
+    background-color: $accent-color;
+    box-shadow: 0px 4px 4px $primary-box-shadow-color;
     border: none;
     border-radius: 4px;
 
@@ -62,8 +62,8 @@
 
     &:hover,
     &:focus {
-        background-color: var(--accent-button-color);
-        box-shadow: 0px 4px 4px var(--primary-box-shadow-color);
+        background-color: $accent-button-color;
+        box-shadow: 0px 4px 4px $primary-box-shadow-color;
     }
 }
 

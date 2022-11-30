@@ -1,8 +1,8 @@
 /* TEAM */
 .team {
-    padding: var(--specific-indent);
+    padding: $specific-indent;
 
-    background-color: var(--primary-bg-color);
+    background-color: $primary-bg-color;
 }
 .team__list {
         display: flex;
@@ -12,12 +12,12 @@
     margin-right: 30px;
     margin-bottom: 0;
 
-    background-color: var(--white-color);
+    background-color: $white-color;
 
     box-shadow:
-        0px 1px 3px var(--first-team-card-box-shadow-color),
-        0px 1px 1px var(--second-team-card-box-shadow-color),
-        0px 2px 1px var(--third-team-card-box-shadow-color);
+        0px 1px 3px $first-team-card-box-shadow-color,
+        0px 1px 1px $second-team-card-box-shadow-color,
+        0px 2px 1px $third-team-card-box-shadow-color;
     border-radius: 0px 0px 4px 4px;
 
     
@@ -34,7 +34,7 @@
 .team__title {
     margin-bottom: 10px;
 
-    color: var(--primary-text-color);
+    color: $primary-text-color;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -42,7 +42,7 @@
 }
 
 .team__description {
-    color: var(--description-text-color);
+    color: $description-text-color;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;

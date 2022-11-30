@@ -1,6 +1,6 @@
 /* --------PORTFOLIO PAGE--------- */
 .portfolio {
-    padding: var(--specific-indent);
+    padding: $specific-indent;
 }
 
 
@@ -36,12 +36,12 @@
     //FILTER-BUTTON FOCUS AND HOVER
     &:hover,
     &:focus {
-        color: var(--white-color);
-        background-color: var(--accent-color);
+        color: $white-color;
+        background-color: $accent-color;
         box-shadow:
-            0px 3px 1px var(--first-filter-box-shadow-color),
-            0px 1px 2px var(--second-filter-box-shadow-color),
-            0px 2px 2px var(--third-filter-box-shadow-color);
+            0px 3px 1px $first-filter-box-shadow-color,
+            0px 1px 2px $second-filter-box-shadow-color,
+            0px 2px 2px $third-filter-box-shadow-color;
     }
     
 }
@@ -83,14 +83,14 @@
 
 .card-set__link {
     display: block;
-    color: var(--primary-text-color);
+    color: $primary-text-color;
 
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
     & {
         display: block;
-        color: var(--primary-text-color);
+        color: $primary-text-color;
 
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -98,9 +98,9 @@
     &:hover,
     &:focus {
         box-shadow:
-            0px 1px 1px var(--first-card-set-box-shadow-color),
-            0px 4px 4px var(--second-card-set-box-shadow-color),
-            1px 4px 6px var(--third-card-set-box-shadow-color);
+            0px 1px 1px $first-card-set-box-shadow-color,
+            0px 4px 4px $second-card-set-box-shadow-color,
+            1px 4px 6px $third-card-set-box-shadow-color;
     }
 }
 
@@ -108,14 +108,14 @@
 .card-set__title {
     margin-bottom: 4px;
 
-    color: var(--primary-text-color);
+    color: $primary-text-color;
     letter-spacing: 0.06em;
     font-size: 18px;
     line-height: 2.0;
 }
 
 .card-set__description {
-    color: var(--description-text-color);
+    color: $description-text-color;
     font-size: 16px;
     line-height: 1.9;
 }
@@ -123,9 +123,9 @@
 .card-set__meta {
     padding: 20px 24px;
 
-    border-right: 1px solid var(--card-set-border-color);
-    border-bottom: 1px solid var(--card-set-border-color);
-    border-left: 1px solid var(--card-set-border-color);
+    border-right: 1px solid $card-set-border-color;
+    border-bottom: 1px solid $card-set-border-color;
+    border-left: 1px solid $card-set-border-color;
 }
 
 
@@ -149,8 +149,8 @@
     font-size: 18px;
     line-height: 1.55;
 
-    color: var(--white-color);
-    background-color: var(--overlay-bg-color);
+    color: $white-color;
+    background-color: $overlay-bg-color;
 
     transform: translateY(101%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);

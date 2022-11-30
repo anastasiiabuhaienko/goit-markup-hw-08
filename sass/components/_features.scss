@@ -1,7 +1,7 @@
 // FEATURES
 
 .features {
-    padding: var(--specific-indent);
+    padding: $specific-indent;
 }
 
 .features__list {
@@ -28,7 +28,7 @@
 }
 
 .features__description {
-    color: var(--description-text-color);
+    color: $description-text-color;
     font-size: 14px;
     line-height: 1.7;
 }
@@ -39,7 +39,7 @@
     align-items: center;
 
     height: 120px;
-    background-color: var(--primary-bg-color);
+    background-color: $primary-bg-color;
     border-radius: 4px;
     margin-bottom: 30px;
 }

@@ -2,7 +2,7 @@
 
 
 footer {
-    background-color: var(--accent-bg-color);
+    background-color: $accent-bg-color;
 }
 
 .footer {
@@ -26,5 +26,5 @@ address {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    color: var(--white-color);
+    color: $white-color;
 }
