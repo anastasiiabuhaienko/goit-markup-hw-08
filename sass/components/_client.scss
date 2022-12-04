@@ -2,7 +2,11 @@
 
 
 .client {
-    padding: $specific-indent;
+    padding: $first-indent;
+
+    // @media screen and (min-width: 1200px) {
+    //     padding: $second-indent;
+    // }
 }
 
 .client__list {
@@ -46,7 +50,6 @@
 
     @media screen and (min-width: 1200px) {
         width: calc((100% - 12 * 15px)/6);
-        margin-bottom: 0;
     }
 }
 

@@ -640,7 +640,12 @@ header {
   padding: 94px 0;
   background-color: #F5F4FA;
 }
-
+@media screen and (min-width: 768px) {
+  .team {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
 .team__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -808,7 +813,6 @@ header {
 @media screen and (min-width: 1200px) {
   .client__item {
     width: calc((100% - 180px) / 6);
-    margin-bottom: 0;
   }
 }
 

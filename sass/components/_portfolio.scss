@@ -1,6 +1,10 @@
 /* --------PORTFOLIO PAGE--------- */
 .portfolio {
-    padding: $specific-indent;
+    padding: $first-indent;
+
+    // @media screen and (min-width: 1200px) {
+    //     padding: $second-indent;
+    // }
 }
 
 
