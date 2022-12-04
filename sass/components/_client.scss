@@ -7,6 +7,8 @@
 
 .client__list {
         display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
 }
 
 .client__link {
@@ -14,7 +16,6 @@
         align-items: center;
         justify-content: center;
 
-        width: 170px;
         height: 92px;
 
         border: 1px solid $primary-icon-color;
@@ -30,12 +31,23 @@
 }
 
 .client__item {
-        margin-right: 30px;
-        margin-bottom: 0;
 
-    &:last-child {
-            margin-right: 0;
-        }
+    width: calc((100% - 4 * 15px)/2);
+    margin: 15px;
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 6 * 15px)/3);
+    }
+    // &:nth-last-child(-n + 3) {
+    //     @media screen and (max-width: 767px) {
+    //         margin-bottom: 0;
+    //     }
+    // }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 12 * 15px)/6);
+        margin-bottom: 0;
+    }
 }
 
 
