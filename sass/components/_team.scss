@@ -5,13 +5,12 @@
     background-color: $primary-bg-color;
 }
 .team__list {
-        display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
 }
 
 .team__item {
-    margin-right: 30px;
-    margin-bottom: 0;
-
     background-color: $white-color;
 
     box-shadow:
@@ -20,15 +19,32 @@
         0px 2px 1px $third-team-card-box-shadow-color;
     border-radius: 0px 0px 4px 4px;
 
-    
-    &:last-child {
-        margin-right: 0;
+    &:not(:last-child) {
+        @media screen and (max-width: 479px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        //Расчет ширины элемента (100% - количество марджинов в строке * значение марджина)/ кол-во элементов в строке
+        width: calc((100% - 4 * 15px)/2);
+        margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        //Расчет ширины элемента (100% - количество марджинов в строке * значение марджина)/ кол-во элементов в строке
+        width: calc((100% - 8 * 15px)/4);
+        margin: 15px;
     }
 }
 
 .team__meta {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
+
+    @media screen and (min-width:1200px) {
+        padding-bottom: 30px;
+    }
 }
 
 .team__title {
@@ -48,9 +64,8 @@
     text-align: center;
 }
 
-    /* сохранение размера блока картинки, на случай если картинка не загрузилась */
 .team__photo {
-    width: 270px;
+    width: 100%;
 }
 
 

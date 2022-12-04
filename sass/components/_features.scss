@@ -31,7 +31,7 @@
     @media screen and (min-width: 1200px) {
         //Расчет ширины элемента (100% - количество марджинов в строке * значение марджина)/ кол-во элементов в строке
         width: calc((100% - 8 * 15px)/4);
-        margin-right: 15px;
+        margin: 15px;
     }
 
     
@@ -69,4 +69,5 @@
     background-color: $primary-bg-color;
     border-radius: 4px;
     margin-bottom: 30px;
+
 }
