@@ -5,3 +5,34 @@ header {
 .header-bar {
     display: flex;
 }
+
+.menu-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: $white-color;
+
+    &__icon-cross {
+        display: none;
+    }
+
+    &.is-open &__icon-cross {
+        display: block;
+    }
+
+    &.is-open &__icon-menu {
+        display: none;
+    }
+
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+    }
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+
+}
+
