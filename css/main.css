@@ -89,39 +89,6 @@ header {
   border-bottom: 1px solid #ECECEC;
 }
 
-.header-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.menu-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: #ffffff;
-}
-.menu-button__icon-cross {
-  display: none;
-}
-.menu-button.is-open .menu-button__icon-cross {
-  display: block;
-}
-.menu-button.is-open .menu-button__icon-menu {
-  display: none;
-}
-.menu-button:hover, .menu-button:focus {
-  fill: #2196F3;
-}
-@media (min-width: 768px) {
-  .menu-button {
-    display: none;
-  }
-}
-
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
