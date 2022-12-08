@@ -13,54 +13,59 @@
 </head>
 <body>
     <!--Page header-->
-    <header>
+    <header class="page-header">
         <div class="container header-bar">
+            <a href="" class="logo link">
+                <span class="logo__text logo__text--accent">Web</span><span class="logo__text logo__text--black">Studio</span>
+            </a>
+
+
             <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                 <svg width="40" height="40">
                     <use href="./images/icons.svg#menu"></use>
                 </svg>
             </button>
 
-            <nav class="site-nav">
-                <a href="" class="logo link">
-                    <span class="logo__text logo__text--accent">Web</span><span class="logo__text logo__text--black">Studio</span>
-                </a>
-            
-                <ul class="nav-list list">
-                    <li class="nav-list__item">
-                        <a href="./index.html" class="nav-list__link nav-list__link--current link">
-                            Студія
+            <div class="menu">
+                <nav class="site-nav">
+             
+                    <ul class="nav-list list">
+                        <li class="nav-list__item">
+                            <a href="./index.html" class="nav-list__link nav-list__link--current link">
+                                Студія
+                            </a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="./portfolio.html" class="nav-list__link link">
+                                Портфоліо
+                            </a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="" class="nav-list__link link">
+                                Контакти
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <ul class="contacts list">
+                    <li class="contacts__item">
+                        <a href="mailto:info@devstudio.com" class="contacts__link link">
+                            <svg width="16px" height="12px" class="contacts__icon">
+                                <use href="./images/icons.svg#envelope"></use>
+                            </svg>info@devstudio.com
                         </a>
                     </li>
-                    <li class="nav-list__item">
-                        <a href="./portfolio.html" class="nav-list__link link">
-                            Портфоліо
-                        </a>
-                    </li>
-                    <li class="nav-list__item">
-                        <a href="" class="nav-list__link link">
-                            Контакти
+                    <li class="contacts__item">
+                        <a href="tel:+380961111111" class="contacts__link link">
+                            <svg width="10px" height="16px" class="contacts__icon">
+                                <use href="./images/icons.svg#smartphone"></use>
+                            </svg>+38 096 111 11 11
                         </a>
                     </li>
                 </ul>
-            </nav>
+            </div>
 
-            <ul class="contacts list">
-                <li class="contacts__item">
-                    <a href="mailto:info@devstudio.com" class="contacts__link link">
-                        <svg width="16px" height="12px" class="contacts__icon">
-                            <use href="./images/icons.svg#envelope"></use>
-                        </svg>info@devstudio.com
-                    </a>
-                </li>
-                <li class="contacts__item">
-                    <a href="tel:+380961111111" class="contacts__link link">
-                        <svg width="10px" height="16px" class="contacts__icon">
-                            <use href="./images/icons.svg#smartphone"></use>
-                        </svg>+38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
         </div>
     </header>
 
@@ -498,10 +503,6 @@
             </section>
     </main>
 
-    <a href="" class="logo link">
-        <span class="logo__text logo__text--accent">Web</span><span class="logo__text logo__text--black">Studio</span>
-    </a>
-
     <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu">
             <svg width="40" height="40">
@@ -534,19 +535,20 @@
         
             <ul class="contacts list">
                 <li class="contacts__item">
-                    <a href="mailto:info@devstudio.com" class="contacts__link link">
-                        <svg width="16px" height="12px" class="contacts__icon">
-                            <use href="./images/icons.svg#envelope"></use>
-                        </svg>info@devstudio.com
-                    </a>
-                </li>
-                <li class="contacts__item">
                     <a href="tel:+380961111111" class="contacts__link link">
                         <svg width="10px" height="16px" class="contacts__icon">
                             <use href="./images/icons.svg#smartphone"></use>
                         </svg>+38 096 111 11 11
                     </a>
                 </li>
+                <li class="contacts__item">
+                    <a href="mailto:info@devstudio.com" class="contacts__link link">
+                        <svg width="16px" height="12px" class="contacts__icon">
+                            <use href="./images/icons.svg#envelope"></use>
+                        </svg>info@devstudio.com
+                    </a>
+                </li>
+
             </ul>
         </div>
     </div>
