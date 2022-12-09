@@ -11,6 +11,12 @@ footer {
 }
 
 .footer-bar {
+    @media screen and (max-width: 1199px) {
+        display: inline-flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+    }
 
     @media screen and (min-width: 1200px) {
         display: flex;
@@ -48,7 +54,7 @@ address {
 .social-footer {
     margin-top: 60px;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 480px) {
         margin-top: 0;
     }
 }
