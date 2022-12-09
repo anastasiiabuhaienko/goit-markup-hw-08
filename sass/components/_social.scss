@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
 
-    margin-top: 16px;
+    margin-top: 20px;
 }
 
 .social__link {
@@ -59,6 +59,35 @@
 
     &--indent {
         margin-top: 20px;
+    }
+
+}
+
+//SOCIAL MOBILE
+
+.social-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-top: 64px;
+}
+
+.social-text__item:not(:last-child) {
+    margin-right: 10px;
+    border-right: 1px solid $input-primary-border-color;
+}
+
+.social-text__link {
+    color: $accent-color;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    padding: 10px 10px 10px 0;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
     }
 
 }

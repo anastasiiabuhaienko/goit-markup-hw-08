@@ -1,7 +1,14 @@
 // FORM SUBSCRIPTION 
 
 .subscription {
-    margin-left: auto;
+
+    @media screen and (max-width: 479px) {
+        margin-top: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+    }
+
 }
 
 .subscription__title {
@@ -12,6 +19,10 @@
     line-height: 1.14;
     text-transform: uppercase;
     color: $white-color;
+    
+    @media screen and (max-width: 479px) {
+        text-align: center;
+    }
 }
 
 .subscription__input {
