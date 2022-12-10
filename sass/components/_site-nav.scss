@@ -9,6 +9,10 @@
             display: none;
         }
     }
+
+    @media screen and (max-width:767px) {
+        margin-bottom: 50px;
+    }
 }
 
 
@@ -40,12 +44,9 @@
         padding-top: 32px;
         padding-bottom: 32px;
     }
-    // @media screen and (max-width: 767px) {
-    //     padding-bottom: 22px;
-    // }
 
     &--current::after {
-        @media screena and (min-width: 768px) {
+        @media screen and (min-width: 768px) {
         content: "";
         position: absolute;
         bottom: 0;
