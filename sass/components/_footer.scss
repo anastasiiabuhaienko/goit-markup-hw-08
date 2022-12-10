@@ -11,17 +11,23 @@ footer {
 }
 
 .footer-bar {
-    @media screen and (max-width: 1199px) {
-        display: inline-flex;
+    @media screen and (min-width: 768px) {
+        display: flex;
         flex-wrap: wrap;
         align-items: baseline;
         justify-content: space-between;
     }
+    // @media screen and (max-width: 1199px) {
+    //     display: inline-flex;
+    //     flex-wrap: wrap;
+    //     align-items: baseline;
+    //     justify-content: space-between;
+    // }
 
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        align-items: baseline;
-    }
+    // @media screen and (min-width: 1200px) {
+    //     display: flex;
+    //     align-items: baseline;
+    // }
 
 }
 .contact-box {
@@ -42,7 +48,7 @@ address {
     text-transform: uppercase;
     color: $white-color;
 
-    @media screen and (max-width: 479px){
+    @media screen and (max-width: 1199px){
         text-align: center;
     }
 
