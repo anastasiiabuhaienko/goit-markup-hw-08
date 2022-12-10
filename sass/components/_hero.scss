@@ -13,29 +13,73 @@
         padding-bottom: 200px;
     }
 
-
+}
 
     //HERO OVERLAY
 
-    &--overlay {
-        height: 400px;
-        max-width: 1600px;
+.hero--overlay {
+    margin-left: auto;
+    margin-right: auto;
 
-        margin-left: auto;
-        margin-right: auto;
-        background-image: linear-gradient(to left,
-                $hero-gradient,
-                $hero-gradient),
-            url("../images/hero.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+    height: 400px;
+    max-width: 480px;
+    background-image: linear-gradient(to left,
+            $hero-gradient,
+            $hero-gradient),
+        url("../images/hero/hero-480@1.jpg");
 
-        @media screen and (min-width: 1200px) {
-            height: 600px;
-        }
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media screen and (min-width: 1200px) {
+        height: 600px;
+    }
+} 
+    
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero--overlay {
+        background-image: url("../images/hero/hero-480@2.jpg");
     }
 }
+
+@media (min-device-pixel-ratio: 3),
+(-webkit-min-device-pixel-ratio: 3),
+(min-resolution: 288dpi),
+(min-resolution: 3dppx) {
+    .hero--overlay {
+         background-image: url("../images/hero/hero-480@3.jpg");
+    }
+}
+
+
+
+
+
+
+        // &--overlay {
+        //     margin-left: auto;
+        //     margin-right: auto;
+    
+        //     height: 400px;
+        //     max-width: 1600px;
+        //     background-image: linear-gradient(to left,
+        //             $hero-gradient,
+        //             $hero-gradient),
+        //         url("../images/hero.jpg");
+    
+        //     background-repeat: no-repeat;
+        //     background-size: cover;
+        //     background-position: center;
+    
+        //     @media screen and (min-width: 1200px) {
+        //         height: 600px;
+        //     }
+        // }
+// }
 
 .hero__title {
     margin-bottom: 30px;
@@ -84,15 +128,3 @@
         box-shadow: 0px 4px 4px $primary-box-shadow-color;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
