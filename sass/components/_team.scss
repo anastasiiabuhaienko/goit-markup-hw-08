@@ -11,7 +11,11 @@
 .team__list {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+
+    @media screen and (min-width: 768px){
+        margin: -15px;
+    }
+
 }
 
 .team__item {
@@ -24,7 +28,7 @@
     border-radius: 0px 0px 4px 4px;
 
     &:not(:last-child) {
-        @media screen and (max-width: 479px) {
+        @media screen and (max-width: 767px) {
             margin-bottom: 30px;
         }
     }
