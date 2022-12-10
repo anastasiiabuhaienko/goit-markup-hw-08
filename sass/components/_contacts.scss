@@ -4,6 +4,18 @@
     display: flex;
     margin-left: auto;
     align-items: center;
+
+    &--hide {
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+    &--mobile {
+        @media screen and (max-width: 767px) {
+            display: inline-block;
+            margin-bottom: 44px;
+        }
+    }
 }
 
 .contacts__item:not(:last-child) {
@@ -20,6 +32,7 @@
         margin-right: 50px;
     }
 }
+
 
 .contacts__link {
     display: flex;
@@ -38,6 +51,19 @@
     &:hover,
     &:focus {
         color: $accent-color;
+    }
+
+    @media screen and(max-width:767px) {
+        font-size: 24px;
+        line-height: 1.17;
+    }
+
+    &--color {
+        @media screen and(max-width:767px) {
+            color: $accent-color;
+            font-size: 34px;
+            line-height: 1.17;
+        }
     }
 }
 
