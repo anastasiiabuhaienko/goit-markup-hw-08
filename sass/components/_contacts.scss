@@ -18,7 +18,7 @@
     &--mobile {
         @media screen and (max-width: 767px) {
             display: inline-block;
-            margin-bottom: 44px;
+            margin-bottom: 64px;
         }
     }
 }
@@ -37,8 +37,6 @@
 
 .contacts__link {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
     align-items: center;
 
     color: $description-text-color;
@@ -61,6 +59,10 @@
 
     @media screen and (min-width:767px) and (max-width:1199px) {
         padding: 5px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
     &--color {
         @media screen and(max-width:767px) {

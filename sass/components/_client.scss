@@ -12,7 +12,7 @@
 .client__list {
         display: flex;
         flex-wrap: wrap;
-        margin: -15px;
+        gap: 30px;
 }
 
 .client__link {
@@ -36,15 +36,14 @@
 
 .client__item {
 
-    width: calc((100% - 4 * 15px)/2);
-    margin: 15px;
+    width: calc((100% - 30px)/2);
 
     @media screen and (min-width: 768px) {
-        width: calc((100% - 6 * 15px)/3);
+        width: calc((100% - 60px)/3);
     }
 
     @media screen and (min-width: 1200px) {
-        width: calc((100% - 12 * 15px)/6);
+        width: calc((100% - 150px)/6);
     }
 }
 
