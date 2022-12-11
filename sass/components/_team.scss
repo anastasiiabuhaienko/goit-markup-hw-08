@@ -3,9 +3,9 @@
     padding: $first-indent;
     background-color: $primary-bg-color;
 
-    // @media screen and (min-width: 1200px) {
-    //     padding: $second-indent;
-    // }
+    @media screen and (min-width: 1200px) {
+        padding: $second-indent;
+    }
 }
 
 .team__list {

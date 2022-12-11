@@ -381,7 +381,7 @@ header {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .contacts__item:not(:last-child) {
     padding-bottom: 32px;
   }
@@ -901,6 +901,11 @@ header {
 .features {
   padding: 60px 0;
 }
+@media screen and (min-width: 1200px) {
+  .features {
+    padding: 94px 0;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .features__list {
@@ -1025,6 +1030,11 @@ header {
 .team {
   padding: 60px 0;
   background-color: #F5F4FA;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding: 94px 0;
+  }
 }
 
 .team__list {
@@ -1185,6 +1195,11 @@ header {
 .client {
   padding: 60px 0;
 }
+@media screen and (min-width: 1200px) {
+  .client {
+    padding: 94px 0;
+  }
+}
 
 .client__list {
   display: -webkit-box;
@@ -1242,6 +1257,11 @@ header {
 /* --------PORTFOLIO PAGE--------- */
 .portfolio {
   padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding: 94px 0;
+  }
 }
 
 .filter {

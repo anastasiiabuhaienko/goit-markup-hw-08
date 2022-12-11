@@ -4,9 +4,9 @@
 .client {
     padding: $first-indent;
 
-    // @media screen and (min-width: 1200px) {
-    //     padding: $second-indent;
-    // }
+    @media screen and (min-width: 1200px) {
+        padding: $second-indent;
+    }
 }
 
 .client__list {
@@ -42,11 +42,6 @@
     @media screen and (min-width: 768px) {
         width: calc((100% - 6 * 15px)/3);
     }
-    // &:nth-last-child(-n + 3) {
-    //     @media screen and (max-width: 767px) {
-    //         margin-bottom: 0;
-    //     }
-    // }
 
     @media screen and (min-width: 1200px) {
         width: calc((100% - 12 * 15px)/6);
