@@ -2,7 +2,10 @@
 
 .features {
     padding: $first-indent;
-
+   
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
     @media screen and (min-width: 1200px) {
         padding: $second-indent;
     }
@@ -15,14 +18,13 @@
         display: flex;
         flex-wrap: wrap;
         margin: -15px;
-
     }    
 }
 
 .features__item {
 
     &:not(:last-child) {
-        @media screen and (max-width: 479px) {
+        @media screen and (max-width: 767px) {
             margin-bottom: 30px;
         }
     }
@@ -60,7 +62,7 @@
     font-size: 14px;
     line-height: 1.7;
 
-    @media screen and (max-width: 479px) {
+    @media screen and (max-width: 767px) {
         text-align: justify;
     }
 }

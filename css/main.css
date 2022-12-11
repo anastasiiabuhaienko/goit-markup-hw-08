@@ -901,6 +901,11 @@ header {
 .features {
   padding: 60px 0;
 }
+@media screen and (max-width: 767px) {
+  .features {
+    text-align: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .features {
     padding: 94px 0;
@@ -918,7 +923,7 @@ header {
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .features__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -953,7 +958,7 @@ header {
   font-size: 14px;
   line-height: 1.7;
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .features__description {
     text-align: justify;
   }
