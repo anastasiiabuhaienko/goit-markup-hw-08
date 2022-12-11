@@ -24,8 +24,8 @@
     height: 400px;
     max-width: 480px;
     background-image: linear-gradient(to left,
-            $hero-gradient,
-            $hero-gradient),
+        $hero-gradient,
+        $hero-gradient),
         url("../images/hero/hero-480@1.jpg");
 
     background-repeat: no-repeat;
@@ -42,7 +42,10 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .hero--overlay {
-        background-image: url("../images/hero/hero-480@2.jpg");
+        background-image: linear-gradient(to left,
+            $hero-gradient,
+            $hero-gradient), 
+            url("../images/hero/hero-480@2.jpg");
     }
 }
 
@@ -51,12 +54,80 @@
 (min-resolution: 288dpi),
 (min-resolution: 3dppx) {
     .hero--overlay {
-         background-image: url("../images/hero/hero-480@3.jpg");
+        background-image: linear-gradient(to left,
+        $hero-gradient,
+        $hero-gradient), 
+        url("../images/hero/hero-480@3.jpg");
     }
 }
 
+@media screen and (min-width: 768px) {
+    .hero--overlay {
+        max-width: 768px;
+        background-image: linear-gradient(to left,
+        $hero-gradient,
+        $hero-gradient), 
+        url("../images/hero/hero-768@1.jpg");
+    }
 
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero--overlay {
+            background-image: linear-gradient(to left,
+            $hero-gradient,
+            $hero-gradient), 
+            url("../images/hero/hero-768@2.jpg");
+        }
+    }
+    @media (min-device-pixel-ratio: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+        .hero--overlay {
+            background-image: linear-gradient(to left,
+            $hero-gradient,
+            $hero-gradient), 
+            url("../images/hero/hero-768@3.jpg");
+        }
+    }
+}
 
+@media screen and (min-width: 1200px) {
+    .hero--overlay {
+        height: 600px;
+        max-width: 1600px;
+        background-image: linear-gradient(to left,
+                $hero-gradient,
+                $hero-gradient),
+            url("../images/hero/hero-1600@1.jpg");
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero--overlay {
+            background-image: linear-gradient(to left,
+                    $hero-gradient,
+                    $hero-gradient),
+                url("../images/hero/hero-1600@1.jpg");
+        }
+    }
+
+    @media (min-device-pixel-ratio: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+        .hero--overlay {
+            background-image: linear-gradient(to left,
+                    $hero-gradient,
+                    $hero-gradient),
+                url("../images/hero/hero-1600@1.jpg");
+        }
+    }
+}
 
 
 

@@ -2,6 +2,7 @@
 @import "./utils/variables";
 @import "./utils/base";
 @import "./utils/visually-hidden";
+@import "./utils/mixins";
 
 @import "./components/header";
 @import "./components/mobile-menu";
@@ -18,3 +19,4 @@
 @import "./components/portfolio";
 @import "./components/footer";
 @import "./components/subscription";
+
